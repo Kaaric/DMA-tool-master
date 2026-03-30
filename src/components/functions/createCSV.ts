@@ -437,6 +437,7 @@ export function createCSV(Answers: Ref<any>) {
         }
 
         const templateParams1 = {
+            edih_mail: 'digitalcheck@edih-hamburg.de',
             customer_name: header[`${prefix}Question2`],
             costumer_type: (prefix === "EUPSO" ? "PSO" : "SME"),
             customer_partner: header.EUDMAQuestionPartner,
@@ -445,7 +446,7 @@ export function createCSV(Answers: Ref<any>) {
             dma_date: formattedDate3,
             KPI_reporting: KPI_String,
             dma_results: base64CSV,
-            filename: formattedDate2 + '_EDIH-Thuringia_'+(prefix === "EUPSO" ? 'PSO' : 'SME')+'-DMA_' + header[`${prefix}Question2`]
+            filename: formattedDate2 + '_EDIH-Hamburg_'+(prefix === "EUPSO" ? 'PSO' : 'SME')+'-DMA_' + header[`${prefix}Question2`]
         };
 
         emailjs.send(service_Id_EDIH, template_Id_EDIH, templateParams1, { publicKey: public_Key })
@@ -459,10 +460,24 @@ export function createCSV(Answers: Ref<any>) {
 
     // send an automatic response to the customer
     let sendCustomerEmail = () => {
+        const costumer_type_label = prefix === "EUPSO" ? "Öffentliche Einrichtung oder Organisation" : "Kleines oder mittelständisches Unternehmen";
+        const email_message = `Hallo ${header[`${prefix}Question4`]},
+
+Sie haben den Digitalcheck zur Ermittlung Ihres digitalen Reifegrades beim European Digital Innovation Hub (EDIH) Hamburg für Ihr/e ${costumer_type_label} ${header[`${prefix}Question2`]} durchgeführt.
+
+Wir haben Ihre Ergebnisse erhalten und werden so bald wie möglich mit Ihnen Kontakt aufnehmen. Dabei erhalten Sie Ihre Ergebnisse in PDF-Form, inklusive eines europaweiten Benchmarks.
+
+Wir freuen uns, Sie im EDIH Hamburg willkommen zu heißen!
+
+Besuchen Sie in der Zwischenzeit gerne unsere Website und entdecken Sie weitere Serviceangebote: edih-hamburg.de
+
+Ihr EDIH Hamburg-Team`;
+
         const templateParams2 = {
             customer_name: header[`${prefix}Question2`],
             customer_contact: header[`${prefix}Question4`],
             customer_mail: header[`${prefix}Question6`],
+            customer_message: email_message
         };
 
         emailjs.send(service_Id, template_Id, templateParams2, { publicKey: public_Key })

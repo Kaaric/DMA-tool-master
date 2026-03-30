@@ -16,8 +16,8 @@ export const EUDmaJSON = {
           "type": "html",
           "name": "rendered-html",
           "html": {
-            "de": "<p>Im Rahmen der EDIH-Initiative der Europäischen Union wurde jeweils ein digitales Reifegradmodell mit Fragen für kleine und mittlere Unternehmen (SME) und öffentliche Organisationen (PSO) erarbeitet. Die Modelle ermöglichen die Durchführung von digitalen Reifegraderfassungen (DMA) zu den drei Zeitpunkten T0 (vor dem EDIH-Service), T1 (1 Jahr nach T0) und T2 (2 Jahre nach T1). <b>Mit den Digitalchecks verfolgt die EU folgende Ziele:</b></p><ol><li>Die Bewertung des aktuellen Stands der digitalen Reife der Unternehmen/Organisationen für die Ermittlung der erforderlichen EDIH-Digitalisierungsdienste.</li><li>Ein Benchmarking für Unternehmen/Organisationen, um ein besseres Bild der digitalen Reife im Vergleich zu Wettbewerbern zu erhalten.</li><li>Die Messung und Berichterstattung über die Wirksamkeit der EDIH-Dienste.</li><li>Die Bereitstellung von Feedback für politische Entscheidungen und erforderliche Korrekturmaßnahmen.</li></ol><p>Dieser Online-Check bietet Ihnen die Möglichkeit Ihren digitalen Reifegrad selbst zu bestimmen. <b>Ihre Daten werden standardmäßig nicht gespeichert oder weiterverarbeitet.</b> Wenn Sie an einem EU-weiten Benchmark Ihres Reifegrades erhalten wollen und an der weiteren Zusammenarbeit mit dem EDIH Thuringa interessiert sind, haben Sie <b>die Möglichkeit, uns Ihre Ergebnisse im Anschluss an die Bewertung zuzusenden.</b> Die Durchführung des Digitalchecks dauert in der Regel 10-15 Minuten.</p>",
-            "en": "<p>As part of the EDIH initiative of the European Union, a digital maturity model with questions was developed for both small and medium-sized enterprises (SMEs) and public sector organizations (PSOs). The models enable the execution of digital maturity assessments (DMA) at three points in time: T0 (before the EDIH service), T1 (1 year after T0), and T2 (2 years after T1). <b>With the digital checks, the EU pursues the following objectives:</b></p><ol><li>To assess the current level of digital maturity of companies/organizations in order to determine the necessary EDIH digitalization services.</li><li>To provide benchmarking for companies/organizations to gain a better understanding of their digital maturity compared to competitors.</li><li>To measure and report on the effectiveness of the EDIH services.</li><li>To provide feedback for policy decisions and necessary corrective actions.</li></ol><p>This online check gives you the opportunity to determine your digital maturity level yourself. <b>Your data will not be stored or processed by default.</b> If you would like to receive an EU-wide benchmark of your maturity level and are interested in further cooperation with EDIH Thuringia, you <b>have the option to send us your results after completing the assessment.</b> Completing the digital check usually takes 10–15 minutes.</p>"
+            "de": "<p>Im Rahmen der EDIH-Initiative der Europäischen Union wurde jeweils ein digitales Reifegradmodell mit Fragen für kleine und mittlere Unternehmen (SME) und öffentliche Organisationen (PSO) erarbeitet. Die Modelle ermöglichen die Durchführung von digitalen Reifegraderfassungen (DMA) zu den drei Zeitpunkten T0 (vor dem EDIH-Service), T1 (1 Jahr nach T0) und T2 (2 Jahre nach T1). <b>Mit den Digitalchecks verfolgt die EU folgende Ziele:</b></p><ol><li>Die Bewertung des aktuellen Stands der digitalen Reife der Unternehmen/Organisationen für die Ermittlung der erforderlichen EDIH-Digitalisierungsdienste.</li><li>Ein Benchmarking für Unternehmen/Organisationen, um ein besseres Bild der digitalen Reife im Vergleich zu Wettbewerbern zu erhalten.</li><li>Die Messung und Berichterstattung über die Wirksamkeit der EDIH-Dienste.</li><li>Die Bereitstellung von Feedback für politische Entscheidungen und erforderliche Korrekturmaßnahmen.</li></ol><p>Dieser Online-Check bietet Ihnen die Möglichkeit Ihren digitalen Reifegrad selbst zu bestimmen. <b>Ihre Daten werden standardmäßig nicht gespeichert oder weiterverarbeitet.</b> Wenn Sie an einem EU-weiten Benchmark Ihres Reifegrades erhalten wollen und an der weiteren Zusammenarbeit mit dem EDIH Hamburg interessiert sind, haben Sie <b>die Möglichkeit, uns Ihre Ergebnisse im Anschluss an die Bewertung zuzusenden.</b> Die Durchführung des Digitalchecks dauert in der Regel 10-15 Minuten.</p>",
+            "en": "<p>As part of the EDIH initiative of the European Union, a digital maturity model with questions was developed for both small and medium-sized enterprises (SMEs) and public sector organizations (PSOs). The models enable the execution of digital maturity assessments (DMA) at three points in time: T0 (before the EDIH service), T1 (1 year after T0), and T2 (2 years after T1). <b>With the digital checks, the EU pursues the following objectives:</b></p><ol><li>To assess the current level of digital maturity of companies/organizations in order to determine the necessary EDIH digitalization services.</li><li>To provide benchmarking for companies/organizations to gain a better understanding of their digital maturity compared to competitors.</li><li>To measure and report on the effectiveness of the EDIH services.</li><li>To provide feedback for policy decisions and necessary corrective actions.</li></ol><p>This online check gives you the opportunity to determine your digital maturity level yourself. <b>Your data will not be stored or processed by default.</b> If you would like to receive an EU-wide benchmark of your maturity level and are interested in further cooperation with EDIH Hamburg, you <b>have the option to send us your results after completing the assessment.</b> Completing the digital check usually takes 10–15 minutes.</p>"
           },
           "startWithNewLine": false
         },
@@ -30,47 +30,12 @@ export const EUDmaJSON = {
           "imageWidth": 800
         },
         {
-          "type": "dropdown",
+          "type": "text",
           "name": "EUDMAQuestionPartner",
           "title": {
-            "de": "Bitte wählen Sie den Partner, dessen Service Sie in Anspruch nehmen möchten",
-            "en": "Please select the partner whose service you would like to receive"
+            "de": "Bitte nennen Sie den Partner, oder den Service, den Sie in Anspruch nehmen möchten",
+            "en": "Please name the partner or the service you would like to receive"
           },
-          "choices": [
-            {
-              "value": "BUW",
-              "text": "Bauhaus.Mobility"
-            },
-            {
-              "value": "WBA",
-              "text": "Bauhaus Weiterbildungsakademie Weimar e.V."
-            },
-            {
-              "value": "BPV",
-              "text": "BPV Consult GmbH"
-            },
-            {
-              "value": "HIQ",
-              "text": "highQ Computerlösungen"
-            },
-            {
-              "value": "NTAG",
-              "text": "NT Neue Technologie AG"
-            },
-            {
-              "value": "ThIMo",
-              "text": "Thüringer Innovationszentrum Mobilität (ThIMo)"
-            },
-            {
-              "value": "TZLR",
-              "text": "Thüringer Zentrum für Lernende Systeme und Robotik (TZLR)"
-            },
-            {
-              "value": "WLA",
-              "text": "WeLoveApps GmbH"
-            }
-          ],
-          "showOtherItem": true,
           "isRequired": true
         },
         {
@@ -565,15 +530,12 @@ export const EUDmaJSON = {
           "name": "EUPSOPanel5",
           "elements": [
             {
-              "type": "image",
-              "name": "Digital Maturity Assessment Framework for Public Sector Organisations (PSOs)",
-              "imageLink": {
-                "de": "/DE-EU-DMA-PSO-M2.png",
-                "en": "/EN-EU-DMA-PSO-M2.png"
-              },
-              "altText": "Source: EC JRC own elaboration",
-              "imageHeight": 330,
-              "imageWidth": 800
+              "type": "html",
+              "name": "EUPSO_MaturityFrameworkImage",
+              "html": {
+                "de": "<div class='maturity-dimensions-grid'><div class='maturity-dimension-card'><span>Digitale Strategie und Investitionen</span></div><div class='maturity-dimension-card'><span>Bereitschaft für den digitalen Wandel</span></div><div class='maturity-dimension-card'><span>Auf den Menschen ausgerichtete Digitalisierung</span></div><div class='maturity-dimension-card'><span>Datenverwaltung und -sicherheit</span></div><div class='maturity-dimension-card'><span>Interoperabilität</span></div><div class='maturity-dimension-card'><span>Grüne Digitalisierung</span></div></div>",
+                "en": "<div class='maturity-dimensions-grid'><div class='maturity-dimension-card'><span>Digital Strategy and Investment</span></div><div class='maturity-dimension-card'><span>Readiness for Digital Transformation</span></div><div class='maturity-dimension-card'><span>People-Centric Digitalization</span></div><div class='maturity-dimension-card'><span>Data Management and Security</span></div><div class='maturity-dimension-card'><span>Interoperability</span></div><div class='maturity-dimension-card'><span>Green Digitalization</span></div></div>"
+              }
             }
           ],
           "description": {
@@ -2387,15 +2349,12 @@ export const EUDmaJSON = {
           "name": "EUSMEPanel6",
           "elements": [
             {
-              "type": "image",
-              "name": "Digital Maturity Assessment Framework for Small- and Middlesized Enterprises (SME)",
-              "imageLink": {
-                "de": "/DE-EU-DMA-SME-M2.png",
-                "en": "/EN-EU-DMA-SME-M2.png"
-              },
-              "altText": "Source: EC JRC own elaboration",
-              "imageHeight": 330,
-              "imageWidth": 800
+              "type": "html",
+              "name": "EUSME_MaturityFrameworkImage",
+              "html": {
+                "de": "<div class='maturity-dimensions-grid'><div class='maturity-dimension-card'><span>Digitale Strategie und Investitionen</span></div><div class='maturity-dimension-card'><span>Bereitschaft für den digitalen Wandel</span></div><div class='maturity-dimension-card'><span>Auf den Menschen ausgerichtete Digitalisierung</span></div><div class='maturity-dimension-card'><span>Datenverwaltung und -sicherheit</span></div><div class='maturity-dimension-card'><span>Interoperabilität</span></div><div class='maturity-dimension-card'><span>Grüne Digitalisierung</span></div></div>",
+                "en": "<div class='maturity-dimensions-grid'><div class='maturity-dimension-card'><span>Digital Strategy and Investment</span></div><div class='maturity-dimension-card'><span>Readiness for Digital Transformation</span></div><div class='maturity-dimension-card'><span>People-Centric Digitalization</span></div><div class='maturity-dimension-card'><span>Data Management and Security</span></div><div class='maturity-dimension-card'><span>Interoperability</span></div><div class='maturity-dimension-card'><span>Green Digitalization</span></div></div>"
+              }
             }
           ],
           "description": {

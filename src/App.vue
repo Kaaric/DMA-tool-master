@@ -3,29 +3,21 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
 
-        <div id="img" class="col1 d-flex justify-content-left">
-          <div v-if="!darkmode">
-            <img src="./assets/EDIH-Th_Landscape_darkblue.png" alt="EDIH Thuringia">
-          </div>
-          <div v-else>
-            <img src="./assets/EDIH-Th_Landscape_white.png" alt="EDIH Thuringia">
-          </div>
+        <div id="img" class="col1">
+          <img src="./assets/edih_hamburg_logo.svg" alt="EDIH Hamburg">
         </div>
 
-        <div id="text" class="col2 d-flex justify-content-center align-items-center">
+        <div id="text" class="col2">
           <h1>{{ $t('Header.title') }}</h1>
         </div>
 
-        <div id="buttons" class="col3 d-flex justify-content-right">
+        <div id="buttons" class="col3">
           <div class="btn-group">
-            <button class="btn btn-outline-secondary" @click="darkmode = !darkmode">
-              <BrightnessHigh />
-            </button>
             <select class="btn btn-outline-secondary custom-select" v-model="$i18n.locale">
               <option value="en">EN</option>
               <option value="de">DE</option>
             </select>
-            <button class="btn btn-outline-secondary" onclick="window.location.href='https://edih.digital/moodle/';">
+            <button class="btn btn-outline-secondary" onclick="window.open('https://edih-hamburg.de', '_blank');">
               <div>
                 <BoxWithRightArrowOut />
               </div>
@@ -78,17 +70,13 @@ import Survey from './components/Survey.vue';
 import Results from './components/Results.vue';
 import Celebration from './components/Celebration.vue';
 import { EUDmaJSON } from "./assets/EUDma_json";
-import { inject, Ref, ref } from 'vue';
+import { ref } from 'vue';
 import { EuResult } from './interfaces/EuResults';
 import { doughnutChartData } from './interfaces/doughnutChartData';
 import { radarChartData } from './interfaces/radarChartData';
 import { EUcalculation } from "./components/functions/EuResultsCalulation";
 import { createCSV } from "./components/functions/createCSV";
-import BrightnessHigh from './components/icons/BrightnessHigh.vue';
 import BoxWithRightArrowOut from './components/icons/BoxWithRightArrowOut.vue';
-
-//use global variable darkmode for all pages
-const darkmode: Ref<boolean> = inject('darkmode') || ref(false);
 
 //DMA-Questions
 let showResults = ref(false);

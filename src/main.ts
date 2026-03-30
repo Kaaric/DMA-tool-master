@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createI18n } from 'vue-i18n';
-import { useDark } from "@vueuse/core";
+import { ref } from 'vue';
 import de from './locales/de.json';
 import en from './locales/en.json';
 import { surveyPlugin } from "survey-vue3-ui";
@@ -18,8 +18,8 @@ const i18n = createI18n({
     }
   })
 
-//use useDark from vueuse
-const isDark = useDark();
+//disable dark mode completely
+const isDark = ref(false);
 
 //create App
 const app = createApp(App)
