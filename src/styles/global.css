@@ -465,6 +465,7 @@ input:checked+.confetti-container i {
   width: 100% !important;
   text-align: left !important;
   padding-left: 0 !important;
+  display: block !important;
 }
 
 /* Make choice layout inline */
@@ -476,4 +477,15 @@ input:checked+.confetti-container i {
   flex-direction: row !important;
   flex-wrap: wrap !important;
   gap: 15px;
+  justify-content: flex-start !important;
+}
+
+.sd-question[data-name="EUSMEQuestion18"] .sd-item,
+.sd-question[data-name="EUPSOQuestion18"] .sd-item,
+.sd-question[data-name="EUSMEQuestion23"] .sd-item,
+.sd-question[data-name="EUPSOQuestion23"] .sd-item {
+  margin: 0 !important;
+  width: max-content !important;
+  justify-content: flex-start !important;
+  flex: 0 0 auto !important;
 }
