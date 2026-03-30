@@ -29,7 +29,8 @@ const emit = defineEmits<{
 }>()
 const sendResults = () => {
   const answers = survey.data;
-  emit('surveyCompleted', answers);
+  const plainData = survey.getPlainData({ includeEmpty: true });
+  emit('surveyCompleted', { answers, plainData });
 };
 
 //create survey modell

@@ -7,9 +7,34 @@ const service_Id = import.meta.env.VITE_SERVICE_ID;
 const template_Id = import.meta.env.VITE_TEMPLATE_ID;
 const public_Key = import.meta.env.VITE_PUBLIC_KEY;
 
-export function createCSV(Answers: Ref<any>) {
+export function createCSV(Answers: Ref<any>, PlainData?: Ref<any>) {
+    
+    // Helper to format all survey questions into readable text
+    const formatPlainDataText = (dataArray: any[], level = 0): string => {
+        if (!dataArray || !Array.isArray(dataArray)) return "";
+        let result = "";
+        const indent = "  ".repeat(level);
+
+        dataArray.forEach(item => {
+            if (item.isNode) {
+                result += `\n${indent}--- ${item.title || item.name} ---\n`;
+                if (item.data && Array.isArray(item.data)) {
+                    result += formatPlainDataText(item.data, level + 1);
+                }
+            } else {
+                const questionTitle = item.title || item.name;
+                const answerText = (item.displayValue !== undefined && item.displayValue !== null && item.displayValue !== "") 
+                    ? item.displayValue 
+                    : "Nicht beantwortet";
+                
+                result += `${indent}Frage: ${questionTitle}\n${indent}Antwort: ${answerText}\n\n`;
+            }
+        });
+        return result;
+    };
+
     // crate json with mapping
-    const header = Answers.value
+    const header = Answers.value;
     const prefix = header.EUPSOQuestion2 ? 'EUPSO' : 'EUSME';
 
     //transform date
@@ -436,6 +461,11 @@ export function createCSV(Answers: Ref<any>) {
             else { KPI_String = header.EUDMAQuestionPartner + ";" + header.EUSMEQuestion2 + ";" + "" + ";" + header.EUSMEQuestion3 + ";" + "" + ";" + header.EUSMEQuestion4 + ";" + header.EUSMEQuestion5 + ";" + header.EUSMEQuestion6 + ";" + header.EUSMEQuestion7 + ";" + header.EUSMEQuestion8 + ";" + SMEsize[parseInt(header.EUSMEQuestion10.slice(5).trim(), 10)] + ";" + header.EUSMEQuestion9 + ";" + header.EUSMEQuestion11.text4 + ";" + header.EUSMEQuestion11.text3 + ";" + header.EUSMEQuestion11.text1 + ", " + header.EUSMEQuestion11.text2 + ", " + header.EUSMEQuestion11.text3 + ";" + SMEsectors[parseInt(header.EUSMEQuestion13.slice(5).trim(), 10)] }
         }
 
+        let formatted_answers = "";
+        if (PlainData && PlainData.value) {
+            formatted_answers = formatPlainDataText(PlainData.value);
+        }
+
         const templateParams1 = {
             edih_mail: 'digitalcheck@edih-hamburg.de',
             customer_name: header[`${prefix}Question2`],
@@ -445,6 +475,7 @@ export function createCSV(Answers: Ref<any>) {
             customer_mail: header[`${prefix}Question6`],
             dma_date: formattedDate3,
             KPI_reporting: KPI_String,
+            full_answers_text: formatted_answers,
             dma_results: base64CSV,
             filename: formattedDate2 + '_EDIH-Hamburg_'+(prefix === "EUPSO" ? 'PSO' : 'SME')+'-DMA_' + header[`${prefix}Question2`]
         };

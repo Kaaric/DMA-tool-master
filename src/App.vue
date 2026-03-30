@@ -83,9 +83,11 @@ let showResults = ref(false);
 let showSendButton = ref(true);
 let showingBalloons = ref(false);
 let Answers = ref<EuResult>();
+let PlainData = ref<any>();
 
-const handleDmaCompleted = (answers: any) => {
-  Answers.value = answers;
+const handleDmaCompleted = (payload: any) => {
+  Answers.value = payload.answers;
+  PlainData.value = payload.plainData;
   ResultCalculation();
 }
 
@@ -100,7 +102,7 @@ const ResultCalculation = () => {
 
 //enable csv download
 const sendCSV = () => {
-  createCSV(Answers);
+  createCSV(Answers, PlainData);
   showSendButton.value = false;
   // Animation 
   celebrate()

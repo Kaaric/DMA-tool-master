@@ -393,15 +393,10 @@ input:checked+.confetti-container i {
   min-height: 120px;
 }
 
-.maturity-dimension-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--edih-red);
-}
-
 .maturity-dimension-card span {
   font-family: 'Satoshi', sans-serif;
   color: var(--edih-navy);
-  font-weight: 700;
+  font-weight: bold !important;
   font-size: 1.1rem;
 }
 
@@ -415,4 +410,70 @@ input:checked+.confetti-container i {
   .maturity-dimensions-grid {
     grid-template-columns: 1fr;
   }
+}
+/* Center checkboxes in matrix dropdowns */
+.sd-table__cell,
+.sd-matrix__cell,
+.sd-matrixdropdown__cell {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.sd-table__cell .sd-item,
+.sd-matrix__cell .sd-item,
+.sd-matrixdropdown__cell .sd-item {
+  justify-content: center !important;
+  margin: 0 auto !important;
+  display: flex !important;
+}
+
+/* Custom layout for specific matrixdropdowns with scales */
+.sd-question[data-name="EUSMEQuestion18"] .sd-table__row,
+.sd-question[data-name="EUPSOQuestion18"] .sd-table__row,
+.sd-question[data-name="EUSMEQuestion23"] .sd-table__row,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table__row {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--edih-bg-tint);
+  padding-bottom: 1rem;
+}
+
+.sd-question[data-name="EUSMEQuestion18"] .sd-table__cell--row-text,
+.sd-question[data-name="EUPSOQuestion18"] .sd-table__cell--row-text,
+.sd-question[data-name="EUSMEQuestion23"] .sd-table__cell--row-text,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table__cell--row-text {
+  width: 100% !important;
+  text-align: left !important;
+  font-weight: 700;
+  border-bottom: none !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 0 !important;
+}
+
+.sd-question[data-name="EUSMEQuestion18"] .sd-table__header,
+.sd-question[data-name="EUPSOQuestion18"] .sd-table__header,
+.sd-question[data-name="EUSMEQuestion23"] .sd-table__header,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table__header {
+  display: none !important;
+}
+
+.sd-question[data-name="EUSMEQuestion18"] .sd-matrixdropdown__cell,
+.sd-question[data-name="EUPSOQuestion18"] .sd-matrixdropdown__cell,
+.sd-question[data-name="EUSMEQuestion23"] .sd-matrixdropdown__cell,
+.sd-question[data-name="EUPSOQuestion23"] .sd-matrixdropdown__cell {
+  width: 100% !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+/* Make choice layout inline */
+.sd-question[data-name="EUSMEQuestion18"] .sd-selectbase,
+.sd-question[data-name="EUPSOQuestion18"] .sd-selectbase,
+.sd-question[data-name="EUSMEQuestion23"] .sd-selectbase,
+.sd-question[data-name="EUPSOQuestion23"] .sd-selectbase {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 15px;
 }
