@@ -48,10 +48,6 @@
               {{ $t('Results.button') }}
             </button>
           </div>
-
-          <div v-if="showingBalloons" class="overlay">
-            <!-- <Celebration /> -->
-          </div>
         </div>
 
         <div>
@@ -68,7 +64,6 @@
 <script setup lang="ts">
 import Survey from './components/Survey.vue';
 import Results from './components/Results.vue';
-// import Celebration from './components/Celebration.vue';
 import { EUDmaJSON } from "./assets/EUDma_json";
 import { ref } from 'vue';
 import { EuResult } from './interfaces/EuResults';
@@ -81,7 +76,6 @@ import BoxWithRightArrowOut from './components/icons/BoxWithRightArrowOut.vue';
 //DMA-Questions
 let showResults = ref(false);
 let showSendButton = ref(true);
-let showingBalloons = ref(false);
 let Answers = ref<EuResult>();
 let PlainData = ref<any>();
 
@@ -104,17 +98,7 @@ const ResultCalculation = () => {
 const sendCSV = () => {
   createCSV(Answers, PlainData);
   showSendButton.value = false;
-  // Animation 
-  celebrate()
 };
-
-//Celebration Animation
-const celebrate = () => {
-  // showingBalloons.value = true;
-  // setTimeout(() => {
-  //   showingBalloons.value = false;
-  // }, 3000);
-}
 
 </script>
 
