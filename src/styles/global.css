@@ -6,7 +6,7 @@
   --edih-navy: #001D58;
   --edih-red: #C9002B;
   --edih-bg-tint: #F3F7FE;
-  
+
   --sjs-primary-backcolor: var(--edih-navy) !important;
   --sjs-primary-backcolor-light: rgba(0, 29, 88, 0.1) !important;
   --sjs-primary-backcolor-dark: var(--edih-navy) !important;
@@ -25,38 +25,79 @@
 body {
   background: #ffffff !important;
   min-height: 100vh;
-  min-width: 75vh;
+  min-width: 90vh;
   font-family: 'Satoshi', sans-serif;
 }
 
 /* Force survey backgrounds to white */
-.sv-root-modern, .sd-root-modern, .sd-body, .sv-body, .sd-container-modern, .sd-question, .sd-element {
+.sv-root-modern,
+.sd-root-modern,
+.sd-body,
+.sv-body,
+.sd-container-modern,
+.sd-question,
+.sd-element {
   background-color: #ffffff !important;
   background-image: none !important;
 }
+
 .sd-input {
   background-color: #ffffff !important;
   color: var(--edih-navy) !important;
   border: 1px solid var(--edih-navy) !important;
 }
+
 .sd-dropdown__value {
   color: var(--edih-navy) !important;
 }
+
 .sd-dropdown {
   background-color: #ffffff !important;
   border: 1px solid var(--edih-navy) !important;
 }
 
 header {
-  background: #ffffff;
-  height: 120px;
+  background: #ffffff !important;
+  height: 100px !important;
   padding: 0;
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
 }
 
+/* Remove background color from SurveyJS Advanced Header and set to 200px */
+.sd-header,
+.sd-header--advanced,
+.sd-header__content {
+  background-color: transparent !important;
+  background-image: none !important;
+  background: transparent !important;
+}
+
+.sd-header,
+.sd-header--advanced {
+  height: 200px !important;
+  max-height: 200px !important;
+}
+
+.sd-header__text {
+  color: var(--edih-navy) !important;
+}
+
 /* Fonts */
-h1, h2, h3, h4, h5, h6, label, .sd-title, .sd-description, .sd-text, .sd-navigation__next-btn, li, p, .sd-html {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+.sd-title,
+.sd-description,
+.sd-text,
+.sd-navigation__next-btn,
+li,
+p,
+.sd-html {
   font-family: "Satoshi", sans-serif !important;
   color: var(--edih-navy) !important;
 }
@@ -388,7 +429,7 @@ input:checked+.confetti-container i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, border-color 0.2s ease;
   min-height: 120px;
 }
@@ -411,29 +452,94 @@ input:checked+.confetti-container i {
     grid-template-columns: 1fr;
   }
 }
-/* Center checkboxes in matrix dropdowns */
+
+/* Force table wrap to prevent horizontal scrolling */
+.sd-table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: auto !important;
+}
+
 .sd-table__cell,
 .sd-matrix__cell,
 .sd-matrixdropdown__cell {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: anywhere !important;
+  max-width: 100% !important;
+}
+
+/* Center checkboxes in matrix dropdowns, keep text left */
+.sd-table__cell:not(.sd-table__cell--row-text),
+.sd-matrix__cell:not(.sd-table__cell--row-text),
+.sd-matrixdropdown__cell:not(.sd-table__cell--row-text) {
   text-align: center !important;
   vertical-align: middle !important;
 }
 
-.sd-table__cell .sd-item,
-.sd-matrix__cell .sd-item,
-.sd-matrixdropdown__cell .sd-item {
+.sd-table__cell--row-text {
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+
+.sd-table__cell:not(.sd-table__cell--row-text) .sd-item,
+.sd-matrix__cell:not(.sd-table__cell--row-text) .sd-item,
+.sd-matrixdropdown__cell:not(.sd-table__cell--row-text) .sd-item {
   justify-content: center !important;
   margin: 0 auto !important;
   display: flex !important;
 }
 
+/* Ensure empty text from custom matrices is displayed */
+.sd-question[data-name="EUSMEQuestion18"] .sd-item__control-label,
+.sd-question[data-name="EUPSOQuestion18"] .sd-item__control-label,
+.sd-question[data-name="EUSMEQuestion23"] .sd-item__control-label,
+.sd-question[data-name="EUPSOQuestion23"] .sd-item__control-label,
+.sd-question[data-name="EUSMEQuestion18"] .sd-matrix__responsive-title,
+.sd-question[data-name="EUPSOQuestion18"] .sd-matrix__responsive-title,
+.sd-question[data-name="EUSMEQuestion23"] .sd-matrix__responsive-title,
+.sd-question[data-name="EUPSOQuestion23"] .sd-matrix__responsive-title,
+.sd-question[data-name="EUSMEQuestion18"] .sd-matrix__text,
+.sd-question[data-name="EUPSOQuestion18"] .sd-matrix__text,
+.sd-question[data-name="EUSMEQuestion23"] .sd-matrix__text,
+.sd-question[data-name="EUPSOQuestion23"] .sd-matrix__text {
+  display: inline-block !important;
+  margin-left: 5px !important;
+}
+
 /* Custom layout for specific matrixdropdowns with scales */
+.sd-question[data-name="EUSMEQuestion18"] .sd-table,
+.sd-question[data-name="EUPSOQuestion18"] .sd-table,
+.sd-question[data-name="EUSMEQuestion23"] .sd-table,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.sd-question[data-name="EUSMEQuestion18"] .sd-table tbody,
+.sd-question[data-name="EUPSOQuestion18"] .sd-table tbody,
+.sd-question[data-name="EUSMEQuestion23"] .sd-table tbody,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table tbody {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 .sd-question[data-name="EUSMEQuestion18"] .sd-table__row,
 .sd-question[data-name="EUPSOQuestion18"] .sd-table__row,
 .sd-question[data-name="EUSMEQuestion23"] .sd-table__row,
 .sd-question[data-name="EUPSOQuestion23"] .sd-table__row {
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--edih-bg-tint);
   padding-bottom: 1rem;
@@ -444,18 +550,97 @@ input:checked+.confetti-container i {
 .sd-question[data-name="EUSMEQuestion23"] .sd-table__cell--row-text,
 .sd-question[data-name="EUPSOQuestion23"] .sd-table__cell--row-text {
   width: 100% !important;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
   text-align: left !important;
-  font-weight: 700;
+  font-weight: 400 !important;
   border-bottom: none !important;
   padding-bottom: 0.5rem !important;
   padding-left: 0 !important;
+  display: block !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  word-wrap: break-word !important;
+  word-break: normal !important;
+  box-sizing: border-box !important;
 }
 
-.sd-question[data-name="EUSMEQuestion18"] .sd-table__header,
-.sd-question[data-name="EUPSOQuestion18"] .sd-table__header,
-.sd-question[data-name="EUSMEQuestion23"] .sd-table__header,
-.sd-question[data-name="EUPSOQuestion23"] .sd-table__header {
+.sd-question[data-name="EUSMEQuestion18"] .sd-table__cell--row-text::first-line,
+.sd-question[data-name="EUPSOQuestion18"] .sd-table__cell--row-text::first-line,
+.sd-question[data-name="EUSMEQuestion23"] .sd-table__cell--row-text::first-line,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table__cell--row-text::first-line {
+  font-weight: 700 !important;
+}
+
+.sd-table__cell--row-text * {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: anywhere !important;
+  max-width: 100% !important;
+}
+
+.sd-question[data-name="EUSMEQuestion18"] .sd-table__cell:not(.sd-table__cell--row-text),
+.sd-question[data-name="EUPSOQuestion18"] .sd-table__cell:not(.sd-table__cell--row-text) {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.sd-question[data-name="EUSMEQuestion23"] .sd-table__cell:not(.sd-table__cell--row-text),
+.sd-question[data-name="EUPSOQuestion23"] .sd-table__cell:not(.sd-table__cell--row-text) {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  margin-right: 3rem !important; /* Forces elements to group closely but have breathing room */
+}
+
+/* Horizontalen Scroll der Matrix unterbinden */
+.sd-element__content.sd-question__content[scrollable='true'] {
+  overflow-x: hidden !important;
+}
+
+.sd-table-wrapper,
+.sd-question[data-name="EUSMEQuestion18"] .sd-table-wrapper,
+.sd-question[data-name="EUPSOQuestion18"] .sd-table-wrapper,
+.sd-question[data-name="EUSMEQuestion23"] .sd-table-wrapper,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table-wrapper {
+  overflow-x: hidden !important;
+}
+
+.sd-question[data-name="EUSMEQuestion18"] thead,
+.sd-question[data-name="EUPSOQuestion18"] thead,
+.sd-question[data-name="EUSMEQuestion23"] thead,
+.sd-question[data-name="EUPSOQuestion23"] thead {
   display: none !important;
+}
+
+/* Text-Injektion für Spalte 1 (Geplant) */
+.sd-question[data-name="EUSMEQuestion23"] .sd-table__row td:nth-child(2) .sd-item::after,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table__row td:nth-child(2) .sd-item::after {
+  content: "(weiteres) Geplant" !important;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--edih-navy);
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Text-Injektion für Spalte 2 (Umgesetzt) */
+.sd-question[data-name="EUSMEQuestion23"] .sd-table__row td:nth-child(3) .sd-item::after,
+.sd-question[data-name="EUPSOQuestion23"] .sd-table__row td:nth-child(3) .sd-item::after {
+  content: "Umgesetzt" !important;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--edih-navy);
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .sd-question[data-name="EUSMEQuestion18"] .sd-matrixdropdown__cell,
@@ -488,4 +673,10 @@ input:checked+.confetti-container i {
   width: max-content !important;
   justify-content: flex-start !important;
   flex: 0 0 auto !important;
+}
+
+/* Remove side padding from specific panel elements */
+.sd-element--with-frame.sd-element.sd-element--complex.sd-panel.sd-row__panel {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }

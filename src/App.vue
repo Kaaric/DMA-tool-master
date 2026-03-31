@@ -50,7 +50,7 @@
           </div>
 
           <div v-if="showingBalloons" class="overlay">
-            <Celebration />
+            <!-- <Celebration /> -->
           </div>
         </div>
 
@@ -68,7 +68,7 @@
 <script setup lang="ts">
 import Survey from './components/Survey.vue';
 import Results from './components/Results.vue';
-import Celebration from './components/Celebration.vue';
+// import Celebration from './components/Celebration.vue';
 import { EUDmaJSON } from "./assets/EUDma_json";
 import { ref } from 'vue';
 import { EuResult } from './interfaces/EuResults';
@@ -110,10 +110,10 @@ const sendCSV = () => {
 
 //Celebration Animation
 const celebrate = () => {
-  showingBalloons.value = true;
-  setTimeout(() => {
-    showingBalloons.value = false;
-  }, 3000);
+  // showingBalloons.value = true;
+  // setTimeout(() => {
+  //   showingBalloons.value = false;
+  // }, 3000);
 }
 
 </script>

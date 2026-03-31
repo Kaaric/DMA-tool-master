@@ -116,7 +116,7 @@ export const EUDmaJSON = {
                 "en": "Date"
               },
               "defaultValue": new Date().toISOString().split('T')[0],
-              "isRequired": false,
+              "isRequired": true,
               "visible": false,
               "inputType": "date"
             },
@@ -185,7 +185,7 @@ export const EUDmaJSON = {
                     "en": "Your telephonenumber."
                   },
                   "defaultValue": " ",
-                  "isRequired": false,
+                  "isRequired": true,
                   "inputType": "tel"
                 }
               ],
@@ -627,15 +627,15 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 9",
                   "text": {
-                    "de": "Die Zufriedenheit der Bürgerinnen und Bürger und anderer Interessengruppen (Unternehmen, NRO usw.) mit Online-Diensten/Interaktionen wird regelmäßig überwacht (z. B. durch Feedback-Formulare, E-Mail-Austausch, soziale Medien usw.)",
-                    "en": "Citizens' and other stakeholders' (businesses, NGOs etc) satisfaction with online services/interactions is monitored regularly (e.g. via feedback forms, emails exchanges, social media, etc.)"
+                    "de": "Die Zufriedenheit der Bürgerinnen und Bürger und anderer Interessengruppen (Unternehmen, NRO usw.) mit Online-Diensten/Interaktionen wird regelmäßig überwacht\n(z. B. durch Feedback-Formulare, E-Mail-Austausch, soziale Medien usw.)",
+                    "en": "Citizens' and other stakeholders' (businesses, NGOs etc) satisfaction with online services/interactions is monitored regularly\n(e.g. via feedback forms, emails exchanges, social media, etc.)"
                   }
                 },
                 {
                   "value": "Item 10",
                   "text": {
-                    "de": "Risiken der Digitalisierung (z. B. ungeplante Auswirkungen auf andere Bereiche) werden berücksichtigt",
-                    "en": "Risks of digitalisation (e.g. non-planned effects over other areas) are considered"
+                    "de": "Risiken der Digitalisierung\n(z. B. ungeplante Auswirkungen auf andere Bereiche) werden berücksichtigt",
+                    "en": "Risks of digitalisation\n(e.g. non-planned effects over other areas) are considered"
                   }
                 }
               ]
@@ -763,8 +763,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Konnektivitätsinfrastruktur (z. B. Hochgeschwindigkeitsinternet (Glasfaser), Cloud-Computing-Dienste, Fernzugriff auf Bürosysteme)",
-                    "en": "Connectivity infrastructure (e.g. high-speed (fibre) Internet, cloud computing services, remote access to office systems)"
+                    "de": "Konnektivitätsinfrastruktur\n(z. B. Hochgeschwindigkeitsinternet (Glasfaser), Cloud-Computing-Dienste, Fernzugriff auf Bürosysteme)",
+                    "en": "Connectivity infrastructure\n(e.g. high-speed (fibre) Internet, cloud computing services, remote access to office systems)"
                   }
                 },
                 {
@@ -791,8 +791,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 5",
                   "text": {
-                    "de": "Instrumente der Fernzusammenarbeit (z. B. Telearbeitsplattform, Videokonferenzen, virtuelles Lernen, dienstleistungsspezifische Plattformen und Instrumente)",
-                    "en": "Remote collaboration tools (e.g. teleworking platform, videoconferencing, virtual learning, service-specific platforms and tools)"
+                    "de": "Instrumente der Fernzusammenarbeit\n(z. B. Telearbeitsplattform, Videokonferenzen, virtuelles Lernen, dienstleistungsspezifische Plattformen und Instrumente)",
+                    "en": "Remote collaboration tools\n(e.g. teleworking platform, videoconferencing, virtual learning, service-specific platforms and tools)"
                   }
                 },
                 {
@@ -805,8 +805,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 7",
                   "text": {
-                    "de": "Informationsverwaltungssysteme (z. B. Software für Ressourcenplanung, Buchhaltung, Personalverwaltung, Kundenbeziehungsmanagement, elektronische Rechnungsstellung)",
-                    "en": "Information Management Systems (e.g. Enterprise Resources Planning, Accounting, HR Management, Customer Relationship Management, e-invoicing)"
+                    "de": "Informationsverwaltungssysteme\n(z. B. Software für Ressourcenplanung, Buchhaltung, Personalverwaltung, Kundenbeziehungsmanagement, elektronische Rechnungsstellung)",
+                    "en": "Information Management Systems\n(e.g. Enterprise Resources Planning, Accounting, HR Management, Customer Relationship Management, e-invoicing)"
                   }
                 },
                 {
@@ -916,57 +916,57 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 1",
                   "text": {
-                    "de": "Künstliche Intelligenz (z. B. maschinelles Lernen, Deep Learning; Experten- und regelbasierte Systeme; Cognitive Computing, prädiktive Analytik; robotergestützte Prozessautomatisierung; Sprachdatenverarbeitung, Textauswertung, maschinelles Sehen)",
-                    "en": "Artificial Intelligence (e.g. Machine learning, Deep learning; Expert and Rule based systems; Cognitive computing, predictive analytics; Robotic process automation; Natural Language Processing, Text Mining, Computer Vision)"
+                    "de": "Künstliche Intelligenz\n(z. B. maschinelles Lernen, Deep Learning; Experten- und regelbasierte Systeme; Cognitive Computing, prädiktive Analytik; robotergestützte Prozessautomatisierung; Sprachdatenverarbeitung, Textauswertung, maschinelles Sehen)",
+                    "en": "Artificial Intelligence\n(e.g. Machine learning, Deep learning; Expert and Rule based systems; Cognitive computing, predictive analytics; Robotic process automation; Natural Language Processing, Text Mining, Computer Vision)"
                   }
                 },
                 {
                   "value": "Row 2",
                   "text": {
-                    "de": "Kommunikationstechnologien (z. B. 5G-Netze und Handgeräte; Software-definierte Netze)",
-                    "en": "Communication Technologies (e.g. 5G Networks and Handheld Devices; Software Defined Networks)"
+                    "de": "Kommunikationstechnologien\n(z. B. 5G-Netze und Handgeräte; Software-definierte Netze)",
+                    "en": "Communication Technologies\n(e.g. 5G Networks and Handheld Devices; Software Defined Networks)"
                   }
                 },
                 {
                   "value": "Row 3",
                   "text": {
-                    "de": "Recheninfrastrukturen (z. B. Hochleistungsrechnen; Cloud-Computing; Edge-Computing)",
-                    "en": "Computing Infrastructures (e.g. High Performance Computing; Cloud Computing; Edge Computing)"
+                    "de": "Recheninfrastrukturen\n(z. B. Hochleistungsrechnen; Cloud-Computing; Edge-Computing)",
+                    "en": "Computing Infrastructures\n(e.g. High Performance Computing; Cloud Computing; Edge Computing)"
                   }
                 },
                 {
                   "value": "Row 4",
                   "text": {
-                    "de": "Distributed-Ledger-Technologien (z. B. Blockchain; sonstige Distributed-Ledger-Technologien)",
-                    "en": "Distributed Ledger Technologies (e.g. Blockchain; Other Distributed Ledger Technologies)"
+                    "de": "Distributed-Ledger-Technologien\n(z. B. Blockchain; sonstige Distributed-Ledger-Technologien)",
+                    "en": "Distributed Ledger Technologies\n(e.g. Blockchain; Other Distributed Ledger Technologies)"
                   }
                 },
                 {
                   "value": "Row 5",
                   "text": {
-                    "de": "Digitale Identität und Sicherheit (z. B. Firewall und Protokolle; Antiviren- und Vulnerabilitätsscanner; biometrisches Screening; Cloud-orientierte Cybersicherheit; fortgeschrittene Benutzeranalyse; mobile Identifizierung; Rahmen für digitale Identität)",
-                    "en": "Digital Identity and Security (e.g. Firewall and Protocols; Antivirus and Vulnerability Scanners; Biometric Screening; Cloud-oriented Cybersecurity; Advanced User Analytics; Mobile ID; Digital Identity Frameworks)"
+                    "de": "Digitale Identität und Sicherheit\n(z. B. Firewall und Protokolle; Antiviren- und Vulnerabilitätsscanner; biometrisches Screening; Cloud-orientierte Cybersicherheit; fortgeschrittene Benutzeranalyse; mobile Identifizierung; Rahmen für digitale Identität)",
+                    "en": "Digital Identity and Security\n(e.g. Firewall and Protocols; Antivirus and Vulnerability Scanners; Biometric Screening; Cloud-oriented Cybersecurity; Advanced User Analytics; Mobile ID; Digital Identity Frameworks)"
                   }
                 },
                 {
                   "value": "Row 6",
                   "text": {
-                    "de": "Immersive Technologien (z. B. erweiterte Realität; virtuelle Realität)",
-                    "en": "Immersive technologies (e.g. Augmented Reality; Virtual Reality)"
+                    "de": "Immersive Technologien\n(z. B. erweiterte Realität; virtuelle Realität)",
+                    "en": "Immersive technologies\n(e.g. Augmented Reality; Virtual Reality)"
                   }
                 },
                 {
                   "value": "Row 7",
                   "text": {
-                    "de": "Internet der Dinge und intelligente Geräte (z. B. Mobilgeräte, am Körper getragene Geräte (Wearables) und Sensoren; Plattformen für das Internet der Dinge)",
-                    "en": "Internet of things and Smart Devices (e.g. Mobile Devices, Wearables and Sensors; Internet of Things Platforms)"
+                    "de": "Internet der Dinge und intelligente Geräte\n(z. B. Mobilgeräte, am Körper getragene Geräte (Wearables) und Sensoren; Plattformen für das Internet der Dinge)",
+                    "en": "Internet of things and Smart Devices\n(e.g. Mobile Devices, Wearables and Sensors; Internet of Things Platforms)"
                   }
                 },
                 {
                   "value": "Row 8",
                   "text": {
-                    "de": "Software und Servicetechnologien (z. B. API, Webdienste, Mikrodienste einschließlich Register und Marktplätze; Enterprise-Service-Bus-Technologien und Dienstprogramme für staatliche Dienstleistungen)",
-                    "en": "Software and Service Technologies (e.g. APIs, Web Services, Microservices including Registries and Marketplace; Enterprise Service Bus Technologies and Government Service Utilities)"
+                    "de": "Software und Servicetechnologien\n(z. B. API, Webdienste, Mikrodienste einschließlich Register und Marktplätze; Enterprise-Service-Bus-Technologien und Dienstprogramme für staatliche Dienstleistungen)",
+                    "en": "Software and Service Technologies\n(e.g. APIs, Web Services, Microservices including Registries and Marketplace; Enterprise Service Bus Technologies and Government Service Utilities)"
                   }
                 }
               ]
@@ -1077,7 +1077,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Überwacht die Akzeptanz durch die Beschäftigten und ergreift Maßnahmen, um potenzielle unerwünschte Nebeneffekte abzumildern (z. B. Angst vor Veränderungen; ständige Erreichbarkeit, die der Vereinbarkeit Schutzmaßnahmen gegen Datenschutzverletzungen usw.)",
+                    "de": "Überwacht die Akzeptanz durch die Beschäftigten und ergreift Maßnahmen, um potenzielle unerwünschte Nebeneffekte abzumildern\n(z. B. Angst vor Veränderungen; ständige Erreichbarkeit, die der Vereinbarkeit Schutzmaßnahmen gegen Datenschutzverletzungen usw.)",
                     "en": "Involves staff (including non-ICT staff) in the design and development of product/service/process digitalisation"
                   }
                 },
@@ -1085,7 +1085,7 @@ export const EUDmaJSON = {
                   "value": "Item 4",
                   "text": {
                     "de": "Bezieht die Beschäftigten (einschließlich Nicht-IKT-Personal) in die Konzeption und Entwicklung der Digitalisierung von Produkten/Dienstleistungen/Prozessen ein",
-                    "en": "Monitors staff acceptance and takes measures to mitigate the potential collateral effects (e.g. fear to change; 'always on' culture vs. work-life balance; safeguards to risks of privacy breaches etc.)"
+                    "en": "Monitors staff acceptance and takes measures to mitigate the potential collateral effects\n(e.g. fear to change; 'always on' culture vs. work-life balance; safeguards to risks of privacy breaches etc.)"
                   }
                 },
                 {
@@ -1105,8 +1105,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 7",
                   "text": {
-                    "de": "Führt flexiblere Arbeitsregelungen ein, die durch die Digitalisierung ermöglicht werden (z. B. Telearbeit, Hybridarbeit)",
-                    "en": "Sets up more flexible working arrangements enabled by digitalisation (e.g. telework, hybrid working)"
+                    "de": "Führt flexiblere Arbeitsregelungen ein, die durch die Digitalisierung ermöglicht werden\n(z. B. Telearbeit, Hybridarbeit)",
+                    "en": "Sets up more flexible working arrangements enabled by digitalisation\n(e.g. telework, hybrid working)"
                   }
                 },
                 {
@@ -1176,15 +1176,15 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Daten werden in der Einrichtung nur digital gespeichert (z. B. in Büroanwendungen, E-Mail-Ordnern, eigenständigen Anwendungen, Datenbanken, Dokumentenverwaltungssystemen, ERP usw.)",
-                    "en": "Data are stored only digitally in the organisation (e.g., in office applications, email folders, stand-alone applications, databases, document management systems, ERP etc.)"
+                    "de": "Daten werden in der Einrichtung nur digital gespeichert\n(z. B. in Büroanwendungen, E-Mail-Ordnern, eigenständigen Anwendungen, Datenbanken, Dokumentenverwaltungssystemen, ERP usw.)",
+                    "en": "Data are stored only digitally in the organisation\n(e.g., in office applications, email folders, stand-alone applications, databases, document management systems, ERP etc.)"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "Daten werden fachgerecht integriert (z. B. durch interoperable Systeme, Anwendungsprogrammierschnittstellen), auch wenn sie auf verschiedene Systeme verteilt sind",
-                    "en": "Data are properly integrated (e.g. through interoperable systems, Application Programming Interfaces) even when they are distributed amongst different systems"
+                    "de": "Daten werden fachgerecht integriert\n(z. B. durch interoperable Systeme, Anwendungsprogrammierschnittstellen), auch wenn sie auf verschiedene Systeme verteilt sind",
+                    "en": "Data are properly integrated\n(e.g. through interoperable systems, Application Programming Interfaces) even when they are distributed amongst different systems"
                   }
                 },
                 {
@@ -1211,8 +1211,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Datenanalysen der Einrichtung sind ohne Hilfe von Experten zugänglich (z. B. über Dashboards)",
-                    "en": "Organisation's data analytics are accessible without the need of expert assistance on a regular base (e.g. through dashboards)"
+                    "de": "Datenanalysen der Einrichtung sind ohne Hilfe von Experten zugänglich\n(z. B. über Dashboards)",
+                    "en": "Organisation's data analytics are accessible without the need of expert assistance on a regular base\n(e.g. through dashboards)"
                   }
                 },
                 {
@@ -1273,8 +1273,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 6",
                   "text": {
-                    "de": "Es gibt einen Plan zur Aufrechterhaltung des Geschäftsbetriebs bei unvorhergesehenen Totalausfällen (z. B. bei einer Sperrung aller Daten durch einen Ransomware-Angriff oder physischen Schäden an der IT-Infrastruktur)",
-                    "en": "A business continuity plan is in place in case of catastrophic failures (e.g. all data locked by a ransomware attack or physical damage to the IT infrastructure)"
+                    "de": "Es gibt einen Plan zur Aufrechterhaltung des Geschäftsbetriebs bei unvorhergesehenen Totalausfällen\n(z. B. bei einer Sperrung aller Daten durch einen Ransomware-Angriff oder physischen Schäden an der IT-Infrastruktur)",
+                    "en": "A business continuity plan is in place in case of catastrophic failures\n(e.g. all data locked by a ransomware attack or physical damage to the IT infrastructure)"
                   }
                 }
               ]
@@ -1474,22 +1474,22 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Nachhaltiges Organisationsmodell (z. B. umweltbewusster Betrieb)",
-                    "en": "Sustainable organisational model (e.g. environmental conscious operations)"
+                    "de": "Nachhaltiges Organisationsmodell\n(z. B. umweltbewusster Betrieb)",
+                    "en": "Sustainable organisational model\n(e.g. environmental conscious operations)"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Nachhaltige Erbringung von Dienstleistungen (z. B. papierlose digitale öffentliche Dienste)",
-                    "en": "Sustainable service provision (e.g. paperless digital public services)"
+                    "de": "Nachhaltige Erbringung von Dienstleistungen\n(z. B. papierlose digitale öffentliche Dienste)",
+                    "en": "Sustainable service provision\n(e.g. paperless digital public services)"
                   }
                 },
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Beschaffung nachhaltiger Produkte (z. B. Berücksichtigung von Kriterien wie ökologische Konzeption, durchgängige Produktlebenszyklusplanung, Lebensdauer und Verlängerung der Nutzungsdauer)",
-                    "en": "Procurement of sustainable products (e.g. considering criteria such as: eco-design, end-to-end product lifecycle planning, end-of-life & extension of useful life)"
+                    "de": "Beschaffung nachhaltiger Produkte\n(z. B. Berücksichtigung von Kriterien wie ökologische Konzeption, durchgängige Produktlebenszyklusplanung, Lebensdauer und Verlängerung der Nutzungsdauer)",
+                    "en": "Procurement of sustainable products\n(e.g. considering criteria such as: eco-design, end-to-end product lifecycle planning, end-of-life & extension of useful life)"
                   }
                 },
                 {
@@ -1635,7 +1635,7 @@ export const EUDmaJSON = {
                 "en": "Date"
               },
               "defaultValue": new Date().toISOString().split('T')[0],
-              "isRequired": false,
+              "isRequired": true,
               "visible": false,
               "inputType": "date"
             },
@@ -1702,7 +1702,7 @@ export const EUDmaJSON = {
                         "en": "Your Telephonenumber."
                       },
                       "inputType": "tel",
-                      "isRequired": false
+                      "isRequired": true
                     }
                   ],
                   "description": "Kontaktperson"
@@ -2564,8 +2564,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 10",
                   "text": {
-                    "de": "Die Risiken einer Digitalisierung (z. B. nicht geplante Auswirkungen auf andere Geschäftsbereiche) werden bedacht ",
-                    "en": "Risks of digitalisation (e.g. non-planned effects over other business areas) are considered"
+                    "de": "Die Risiken einer Digitalisierung\n(z. B. nicht geplante Auswirkungen auf andere Geschäftsbereiche) werden bedacht ",
+                    "en": "Risks of digitalisation\n(e.g. non-planned effects over other business areas) are considered"
                   }
                 }
               ]
@@ -2649,8 +2649,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Instrumente der geschäftlichen Fernzusammenarbeit (z. B. Telearbeitsplattform, Videokonferenzen, virtuelles Lernen, geschäftsspezifisch)",
-                    "en": "Remote business collaboration tools (e.g. teleworking platform, videoconferencing, virtual learning, business-specific)"
+                    "de": "Instrumente der geschäftlichen Fernzusammenarbeit\n(z. B. Telearbeitsplattform, Videokonferenzen, virtuelles Lernen, geschäftsspezifisch)",
+                    "en": "Remote business collaboration tools\n(e.g. teleworking platform, videoconferencing, virtual learning, business-specific)"
                   }
                 },
                 {
@@ -2802,8 +2802,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 7",
                   "text": {
-                    "de": "Additive Fertigung (z. B. 3-D-Drucker)",
-                    "en": "Additive manufacturing (e.g. 3D printers)"
+                    "de": "Additive Fertigung\n(z. B. 3-D-Drucker)",
+                    "en": "Additive manufacturing\n(e.g. 3D printers)"
                   }
                 }
               ]
@@ -2914,15 +2914,15 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Überwacht die Akzeptanz durch die Beschäftigten und ergreift Maßnahmen, um potenzielle unerwünschte Nebeneffekte abzumildern (z. B. Angst vor Veränderungen; ständige Erreichbarkeit, die der Vereinbarkeit Schutzmaßnahmen gegen Datenschutzverletzungen usw.)",
-                    "en": "Monitors staff acceptance and takes measures to mitigate the potential collateral effects (e.g. fear to change; ‘always on’ culture vs. work-life balance; safeguards to risks of privacy breaches etc.)"
+                    "de": "Überwacht die Akzeptanz durch die Beschäftigten und ergreift Maßnahmen, um potenzielle unerwünschte Nebeneffekte abzumildern\n(z. B. Angst vor Veränderungen; ständige Erreichbarkeit, die der Vereinbarkeit Schutzmaßnahmen gegen Datenschutzverletzungen usw.)",
+                    "en": "Monitors staff acceptance and takes measures to mitigate the potential collateral effects\n(e.g. fear to change; ‘always on’ culture vs. work-life balance; safeguards to risks of privacy breaches etc.)"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
                     "de": "Bezieht die Beschäftigten (einschließlich Nicht-IKT-Personal) in die Konzeption und Entwicklung der Digitalisierung von Produkten/Dienstleistungen/Prozessen ein",
-                    "en": "Monitors staff acceptance and takes measures to mitigate the potential collateral effects (e.g. fear to change; 'always on' culture vs. work-life balance; safeguards to risks of privacy breaches etc.)"
+                    "en": "Monitors staff acceptance and takes measures to mitigate the potential collateral effects\n(e.g. fear to change; 'always on' culture vs. work-life balance; safeguards to risks of privacy breaches etc.)"
                   }
                 },
                 {
@@ -2942,8 +2942,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 7",
                   "text": {
-                    "de": "Führt flexiblere Arbeitsregelungen ein, die durch die Digitalisierung ermöglicht werden (z. B. Telearbeit, Hybridarbeit)",
-                    "en": "Sets up more flexible working arrangements enabled by digitalisation (e.g. telework, hybrid working)"
+                    "de": "Führt flexiblere Arbeitsregelungen ein, die durch die Digitalisierung ermöglicht werden\n(z. B. Telearbeit, Hybridarbeit)",
+                    "en": "Sets up more flexible working arrangements enabled by digitalisation\n(e.g. telework, hybrid working)"
                   }
                 },
                 {
@@ -2999,15 +2999,15 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Relevante Daten werden digital gespeichert (z. B. Büroanwendungen, E-Mail-Ordner, eigenständige Anwendungen, CRM- oder ERP-System usw.)",
-                    "en": "Relevant data is stored digitally (e.g., office applications, email folders, stand-alone applications, CRM or ERP system, etc.)"
+                    "de": "Relevante Daten werden digital gespeichert\n(z. B. Büroanwendungen, E-Mail-Ordner, eigenständige Anwendungen, CRM- oder ERP-System usw.)",
+                    "en": "Relevant data is stored digitally\n(e.g., office applications, email folders, stand-alone applications, CRM or ERP system, etc.)"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "Daten werden fachgerecht integriert (z. B. durch interoperable Systeme, Anwendungsprogrammierschnittstellen), auch wenn sie auf verschiedene Systeme verteilt sind",
-                    "en": "Data is properly integrated (e.g. through interoperable systems, application programming interfaces) even when it is distributed amongst different systems"
+                    "de": "Daten werden fachgerecht integriert\n(z. B. durch interoperable Systeme, Anwendungsprogrammierschnittstellen), auch wenn sie auf verschiedene Systeme verteilt sind",
+                    "en": "Data is properly integrated\n(e.g. through interoperable systems, application programming interfaces) even when it is distributed amongst different systems"
                   }
                 },
                 {
@@ -3034,8 +3034,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Datenanalysen sind ohne Hilfe von Experten zugänglich (z. B. über Dashboards)",
-                    "en": "Data analytics are accessible without need of expert assistance  (e.g. through dashboards)"
+                    "de": "Datenanalysen sind ohne Hilfe von Experten zugänglich\n(z. B. über Dashboards)",
+                    "en": "Data analytics are accessible without need of expert assistance \n(e.g. through dashboards)"
                   }
                 }
               ]
@@ -3089,8 +3089,8 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 6",
                   "text": {
-                    "de": "Es gibt einen Plan zur Aufrechterhaltung des Geschäftsbetriebs bei unvorhergesehenen Totalausfällen (z. B. bei einer Sperrung aller Daten durch einen Ransomware-Angriff oder physischen Schäden an der IT-Infrastruktur)",
-                    "en": "A business continuity plan is in place in case of catastrophic failures (e.g. all data locked by a ransomware attack or physical damage to the IT infrastructure)"
+                    "de": "Es gibt einen Plan zur Aufrechterhaltung des Geschäftsbetriebs bei unvorhergesehenen Totalausfällen\n(z. B. bei einer Sperrung aller Daten durch einen Ransomware-Angriff oder physischen Schäden an der IT-Infrastruktur)",
+                    "en": "A business continuity plan is in place in case of catastrophic failures\n(e.g. all data locked by a ransomware attack or physical damage to the IT infrastructure)"
                   }
                 }
               ]
@@ -3257,22 +3257,22 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Nachhaltiges Geschäftsmodell (z. B. Kreislaufwirtschaftsmodell, Product-as-a-Service (Produkt als Dienstleistung))",
-                    "en": "Sustainable business model (e.g. circular economy model, product-as-a-service)"
+                    "de": "Nachhaltiges Geschäftsmodell\n(z. B. Kreislaufwirtschaftsmodell, Product-as-a-Service (Produkt als Dienstleistung))",
+                    "en": "Sustainable business model\n(e.g. circular economy model, product-as-a-service)"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Nachhaltige Erbringung von Dienstleistungen (z. B. Nutzungsverfolgung zur Weiterverwendung durch andere Nutzer)",
-                    "en": "Sustainable service provision (e.g. usage tracking for further reuse by other users)"
+                    "de": "Nachhaltige Erbringung von Dienstleistungen\n(z. B. Nutzungsverfolgung zur Weiterverwendung durch andere Nutzer)",
+                    "en": "Sustainable service provision\n(e.g. usage tracking for further reuse by other users)"
                   }
                 },
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Nachhaltige Produkte (z. B. ökologische Konzeption, durchgängige Produktlebenszyklusplanung, Entsorgung am Ende der Lebensdauer und Verlängerung der Nutzungsdauer)",
-                    "en": "Sustainable products (e.g. eco-design, end-to-end product lifecycle planning, end-of-life & extension of useful life)"
+                    "de": "Nachhaltige Produkte\n(z. B. ökologische Konzeption, durchgängige Produktlebenszyklusplanung, Entsorgung am Ende der Lebensdauer und Verlängerung der Nutzungsdauer)",
+                    "en": "Sustainable products\n(e.g. eco-design, end-to-end product lifecycle planning, end-of-life & extension of useful life)"
                   }
                 },
                 {
@@ -3414,8 +3414,8 @@ export const EUDmaJSON = {
   "showQuestionNumbers": "off",
   "showProgressBar": "top",
   "widthMode": "static",
-  "width": "900",
-  "fitToContainer": true,
+  "width": "1000",
+  "headerView": "advanced",
   "requiredText": "*",
   "questionTitlePattern": "numTitleRequire",
 };
