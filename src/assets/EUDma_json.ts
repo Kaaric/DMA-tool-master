@@ -45,7 +45,7 @@ export const EUDmaJSON = {
             "de": "Wählen Sie Ihren Unternehmens-/Organisationstyp",
             "en": "Select your company/organization type"
           },
-          "isRequired": false,
+          "isRequired": true,
           "choices": [
             {
               "value": "PSO",
@@ -70,7 +70,7 @@ export const EUDmaJSON = {
             "de": "Bitte wählen Sie den Zeitpunkt der Durchführung des Digitalchecks",
             "en": "Please choose the time of the digital maturity assessment"
           },
-          "isRequired": false,
+          "isRequired": true,
           "choices": [
             {
               "value": "T0",
