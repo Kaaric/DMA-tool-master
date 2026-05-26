@@ -2293,14 +2293,14 @@ export const EUDmaJSON = {
                 }
               ],
               "description": {
-                "de": "Tätigkeitssektor",
-                "en": "Sector of Activity"
+                "de": "M1.2 Tätigkeitssektor",
+                "en": "M1.2 Sector of Activity"
               }
             }
           ],
           "description": {
-            "de": "M1.2 Tätigkeitssektor",
-            "en": "M1.2 Sector of Activity"
+            "de": "M1.1 Allgemeine Angaben",
+            "en": "M1.1 General Data"
           }
         }
       ],
