@@ -13,7 +13,8 @@
     },
     "Results": {
         "text": "Für einen EU-weiten Benchmark und die weitere Zusammenarbeit mit dem EDIH Hamburg, senden Sie uns Ihre Ergebnisse und wir setzen uns mit Ihnen in Verbindung.",
-        "button": "Ihre Daten an das EDIH senden"
+        "button": "Ihre Daten an das EDIH senden",
+        "successMessage": "Vielen Dank! Ihre Ergebnisse wurden erfolgreich übermittelt."
     },
     "Labels": {
         "l0": "Ergebnis",

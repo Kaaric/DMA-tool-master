@@ -48,6 +48,9 @@
               {{ $t('Results.button') }}
             </button>
           </div>
+          <div v-else class="survey-success-feedback">
+            <p class="success-text">{{ $t('Results.successMessage') }}</p>
+          </div>
         </div>
 
         <div>
@@ -105,4 +108,20 @@ const sendCSV = () => {
 
 <style>
 @import "./styles/global.css";
+
+.survey-success-feedback {
+  background-color: rgba(40, 167, 69, 0.1);
+  border-left: 4px solid #28a745;
+  color: #28a745;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.survey-success-feedback p {
+  margin: 0;
+}
 </style>

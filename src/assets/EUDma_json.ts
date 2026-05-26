@@ -16,7 +16,7 @@ export const EUDmaJSON = {
           "type": "html",
           "name": "rendered-html",
           "html": {
-            "de": "<p>Im Rahmen der EDIH-Initiative der Europäischen Union wurde jeweils ein digitales Reifegradmodell mit Fragen für kleine und mittlere Unternehmen (SME) und öffentliche Organisationen (PSO) erarbeitet. Die Modelle ermöglichen die Durchführung von digitalen Reifegraderfassungen (DMA) zu den drei Zeitpunkten T0 (vor dem EDIH-Service), T1 (1 Jahr nach T0) und T2 (2 Jahre nach T1). <b>Mit den Digitalchecks verfolgt die EU folgende Ziele:</b></p><ol><li>Die Bewertung des aktuellen Stands der digitalen Reife der Unternehmen/Organisationen für die Ermittlung der erforderlichen EDIH-Digitalisierungsdienste.</li><li>Ein Benchmarking für Unternehmen/Organisationen, um ein besseres Bild der digitalen Reife im Vergleich zu Wettbewerbern zu erhalten.</li><li>Die Messung und Berichterstattung über die Wirksamkeit der EDIH-Dienste.</li><li>Die Bereitstellung von Feedback für politische Entscheidungen und erforderliche Korrekturmaßnahmen.</li></ol><p>Dieser Online-Check bietet Ihnen die Möglichkeit Ihren digitalen Reifegrad selbst zu bestimmen. <b>Ihre Daten werden standardmäßig nicht gespeichert oder weiterverarbeitet.</b> Wenn Sie an einem EU-weiten Benchmark Ihres Reifegrades erhalten wollen und an der weiteren Zusammenarbeit mit dem EDIH Hamburg interessiert sind, haben Sie <b>die Möglichkeit, uns Ihre Ergebnisse im Anschluss an die Bewertung zuzusenden.</b> Die Durchführung des Digitalchecks dauert in der Regel 10-15 Minuten.</p>",
+            "de": "<p>Im Rahmen der EDIH-Initiative der Europäischen Union wurde jeweils ein digitales Reifegradmodell mit Fragen für kleine und mittlere Unternehmen (SME) und öffentliche Organisationen (PSO) erarbeitet. Die Modelle ermöglichen die Durchführung von digitalen Reifegraderfassungen (DMA) zu den drei Zeitpunkten T0 (vor dem EDIH-Service), T1 (1 Jahr nach T0) und T2 (2 Jahre nach T1). <b>Mit den Digitalchecks verfolgt die EU folgende Ziele:</b></p><ol><li>Die Bewertung des aktuellen Stands der digitalen Reife der Unternehmen/Organisationen für die Ermittlung der erforderlichen EDIH-Digitalisierungsdienste.</li><li>Ein Benchmarking für Unternehmen/Organisationen, um ein besseres Bild der digitalen Reife im Vergleich zu Wettbewerbern zu erhalten.</li><li>Die Messung und Berichterstattung über die Wirksamkeit der EDIH-Dienste.</li><li>Die Bereitstellung von Feedback für politische Entscheidungen und erforderliche Korrekturmaßnahmen.</li></ol><p>Dieser Online-Check bietet Ihnen die Möglichkeit Ihren digitalen Reifegrad selbstständig durchzuführen. Ihre Daten werden standardmäßig nicht gespeichert oder weiterverarbeitet. Wenn Sie einen EU-weiten Benchmark Ihres Reifegrades erhalten möchten und an der weiteren Zusammenarbeit mit dem EDIH Hamburg interessiert sind, haben Sie die Möglichkeit, uns Ihre Ergebnisse im Anschluss an die Bewertung per Klick zuzusenden. Die Durchführung des Digitalchecks dauert in der Regel 10–15 Minuten.</p>",
             "en": "<p>As part of the EDIH initiative of the European Union, a digital maturity model with questions was developed for both small and medium-sized enterprises (SMEs) and public sector organizations (PSOs). The models enable the execution of digital maturity assessments (DMA) at three points in time: T0 (before the EDIH service), T1 (1 year after T0), and T2 (2 years after T1). <b>With the digital checks, the EU pursues the following objectives:</b></p><ol><li>To assess the current level of digital maturity of companies/organizations in order to determine the necessary EDIH digitalization services.</li><li>To provide benchmarking for companies/organizations to gain a better understanding of their digital maturity compared to competitors.</li><li>To measure and report on the effectiveness of the EDIH services.</li><li>To provide feedback for policy decisions and necessary corrective actions.</li></ol><p>This online check gives you the opportunity to determine your digital maturity level yourself. <b>Your data will not be stored or processed by default.</b> If you would like to receive an EU-wide benchmark of your maturity level and are interested in further cooperation with EDIH Hamburg, you <b>have the option to send us your results after completing the assessment.</b> Completing the digital check usually takes 10–15 minutes.</p>"
           },
           "startWithNewLine": false
@@ -36,7 +36,7 @@ export const EUDmaJSON = {
             "de": "Bitte nennen Sie den Partner, oder den Service, den Sie in Anspruch nehmen möchten",
             "en": "Please name the partner or the service you would like to receive"
           },
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "radiogroup",
@@ -45,7 +45,7 @@ export const EUDmaJSON = {
             "de": "Wählen Sie Ihren Unternehmens-/Organisationstyp",
             "en": "Select your company/organization type"
           },
-          "defaultValue": "PSO",
+          "isRequired": false,
           "choices": [
             {
               "value": "PSO",
@@ -67,10 +67,10 @@ export const EUDmaJSON = {
           "type": "radiogroup",
           "name": "EUDMAQuestion0",
           "title": {
-            "de": "Bitte wählen Sie den Zeitpunkt des Digitalchecks",
+            "de": "Bitte wählen Sie den Zeitpunkt der Durchführung des Digitalchecks",
             "en": "Please choose the time of the digital maturity assessment"
           },
-          "defaultValue": "T0",
+          "isRequired": false,
           "choices": [
             {
               "value": "T0",
@@ -116,7 +116,7 @@ export const EUDmaJSON = {
                 "en": "Date"
               },
               "defaultValue": new Date().toISOString().split('T')[0],
-              "isRequired": true,
+              "isRequired": false,
               "visible": false,
               "inputType": "date"
             },
@@ -124,22 +124,22 @@ export const EUDmaJSON = {
               "type": "text",
               "name": "EUPSOQuestion2",
               "title": {
-                "de": "Name der Einrichtung in der Sie arbeiten.",
+                "de": "Name der Organisation, in der Sie arbeiten",
                 "en": "Name of the organisation you work for."
               },
               "defaultValue": " ",
-              "isRequired": true,
+              "isRequired": false,
 
             },
             {
               "type": "text",
               "name": "EUPSOQuestion3",
               "title": {
-                "de": "Identifizierungsnummer (USt-IdNr. aus Websitenimpressum, Handelsregisternummer oder ähnliches).",
+                "de": "Identifizierungsnummer (USt-IdNr. aus Websitenimpressum, Handelsregisternummer oder ähnliches)",
                 "en": "Identification Number (VAT or equivalent)."
               },
               "defaultValue": " ",
-              "isRequired": true,
+              "isRequired": false,
 
             },
             {
@@ -150,42 +150,42 @@ export const EUDmaJSON = {
                   "type": "text",
                   "name": "EUPSOQuestion4",
                   "title": {
-                    "de": "Ihr vollständiger Name.",
+                    "de": "Ihr vollständiger Name",
                     "en": "Your full name."
                   },
                   "defaultValue": " ",
-                  "isRequired": true,
+                  "isRequired": false,
                 },
                 {
                   "type": "text",
                   "name": "EUPSOQuestion5",
                   "title": {
-                    "de": "Ihre Funktion in der Einrichtung.",
+                    "de": "Ihre Funktion in der Einrichtung",
                     "en": "Your role in the organisation."
                   },
                   "defaultValue": " ",
-                  "isRequired": true,
+                  "isRequired": false,
                 },
                 {
                   "type": "text",
                   "name": "EUPSOQuestion6",
                   "title": {
-                    "de": "Ihre E-Mail-Adresse.",
+                    "de": "Ihre E-Mail-Adresse",
                     "en": "Your email address."
                   },
                   "defaultValue": " ",
-                  "isRequired": true,
+                  "isRequired": false,
                   "inputType": "email"
                 },
                 {
                   "type": "text",
                   "name": "EUPSOQuestion7",
                   "title": {
-                    "de": "Ihre Telefonnummer.",
+                    "de": "Ihre Telefonnummer",
                     "en": "Your telephonenumber."
                   },
                   "defaultValue": " ",
-                  "isRequired": true,
+                  "isRequired": false,
                   "inputType": "tel"
                 }
               ],
@@ -195,54 +195,31 @@ export const EUDmaJSON = {
               "type": "text",
               "name": "EUPSOQuestion8",
               "title": {
-                "de": "Die Website Ihrer Organisation.",
+                "de": "Die Website Ihrer Organisation",
                 "en": "The website of your organisation."
               },
               "defaultValue": " ",
               "inputType": "url"
             },
             {
-              "type": "radiogroup",
+              "type": "text",
               "name": "EUPSOQuestion9",
               "title": {
-                "de": "Die Art Ihrer öffentlichen Einrichtung.",
-                "en": "The type of your public sector organisation."
+                "de": "Die Art Ihrer öffentlichen Einrichtung",
+                "en": "The type of your public sector organisation"
               },
               "defaultValue": " ",
-              "isRequired": true,
-              "choices": [
-                {
-                  "value": "Item 1",
-                  "text": {
-                    "de": "Nationale Behörde",
-                    "en": "National authority"
-                  }
-                },
-                {
-                  "value": "Item 2",
-                  "text": {
-                    "de": "Regional-/Landesbehörde",
-                    "en": "Regional authority"
-                  }
-                },
-                {
-                  "value": "Item 3",
-                  "text": {
-                    "de": "Provinz-/Gemeindebehörde",
-                    "en": "Province/municipal authority"
-                  }
-                }
-              ]
+              "isRequired": false
             },
             {
               "type": "radiogroup",
               "name": "EUPSOQuestion10",
               "title": {
-                "de": "Die Zahl der Beschäftigten der Einrichtung.",
+                "de": "Die Zahl der Beschäftigten der Einrichtung",
                 "en": "Organisation’s staff size."
               },
               "defaultValue": " ",
-              "isRequired": true,
+              "isRequired": false,
               "choices": [
                 {
                   "value": "Item 1",
@@ -271,10 +248,10 @@ export const EUDmaJSON = {
               "type": "multipletext",
               "name": "EUPSOQuestion11",
               "title": {
-                "de": "Die vollständige Anschrift der Organisation.",
+                "de": "Die vollständige Anschrift der Organisation",
                 "en": "The full address of the organisation."
               },
-              "isRequired": true,
+              "isRequired": false,
               "items": [
                 {
                   "name": "text1",
@@ -310,7 +287,7 @@ export const EUDmaJSON = {
               "type": "text",
               "name": "EUPSOQuestion12",
               "title": {
-                "de": "PIC-Nummer.",
+                "de": "PIC-Nummer",
                 "en": "PIC number."
               },
               "description": {
@@ -322,8 +299,8 @@ export const EUDmaJSON = {
             }
           ],
           "description": {
-            "de": "M1.1. Allgemeine Angaben",
-            "en": "M1.1. General Data"
+            "de": "M1.1 Allgemeine Angaben",
+            "en": "M1.1 General Data"
           }
         },
         {
@@ -415,7 +392,7 @@ export const EUDmaJSON = {
                     }
                   ],
                   "showOtherItem": false,
-                  "isRequired": true
+                  "isRequired": false
                 },
                 {
                   "type": "dropdown",
@@ -507,8 +484,8 @@ export const EUDmaJSON = {
             }
           ],
           "description": {
-            "de": "M1.2. Tätigkeitssektor",
-            "en": "M1.2. Sector of Activity"
+            "de": "M1.2 Tätigkeitssektor",
+            "en": "M1.2 Sector of Activity"
           }
         }
       ],
@@ -539,7 +516,7 @@ export const EUDmaJSON = {
             }
           ],
           "description": {
-            "de": "Die Fragen in diesem Modul zielen darauf ab, die digitale Reife Ihrer Einrichtung zu messen. Die Angaben sollen dabei helfen, einzuordnen, an welchem Punkt des digitalen Wandels Ihre Einrichtung zurzeit steht, und zu ermitteln, in welchen Bereichen sie Unterstützung durch das EDIH benötigen könnte. Sie werden auch zur Bewertung der Dienstleistungen, die das EDIH für Ihre Einrichtung letztlich erbringt, und zur Bewertung der Maßnahmen und Finanzinstrumente der EU zur Unterstützung des EDIH beitragen. Folgende Dimensionen werden bewertet (unter Anwendung der auf der letzten Seite erläuterten Bewertungskriterien)",
+            "de": "Die Fragen in diesem Modul messen den digitalen Reifegrad Ihrer Einrichtung. Ihre Angaben helfen uns dabei, Ihren aktuellen Stand im digitalen Wandel einzuordnen und gezielten Unterstützungsbedarf durch das EDIH zu identifizieren. Zudem dienen Ihre Antworten als Basis, um die Qualität unserer Dienstleistungen sowie die Wirksamkeit der EU-Förderinstrumente zu evaluieren.\n\nDie Bewertung erfolgt entlang der folgenden Dimensionen",
             "en": "Questions in this module aim to measure the digital maturity of your organisation. This information will help to characterise the point of departure for the digital transformation journey of your organisation, identifying areas where it might need EDIH support. It will also help to assess the services eventually provided by the EDIH, as well as to help assess the EU policies and financial instruments supporting EDIHs. The following dimensions will be assessed (applying the scoring criteria detailed in the end page)"
           }
         }
@@ -561,7 +538,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion15",
               "title": {
-                "de": "Welche Vorkehrungen wurden getroffen, um Ihre Einrichtung auf die (weitere) Digitalisierung vorzubereiten? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Welche Vorkehrungen zur digitalen Transformation wurden in Ihrer Einrichtung bereits umgesetzt? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "In which of the following ways is your organisation prepared for (more) digitalisation? Please select all options that apply."
               },
               "defaultValue": [
@@ -571,63 +548,63 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Der Digitalisierungsbedarf wurde ermittelt und ist auf die politischen/administrativen Zielen abgestimmt",
+                    "de": "Der Digitalisierungsbedarf wurde ermittelt und ist auf die politischen/administrativen Zielen abgestimmt.",
                     "en": "Digitalisation needs are identified and are aligned with policy making/administrative objectives"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Die finanziellen Ressourcen (Eigenmittel, Zuschüsse, Darlehen), mit denen die Digitalisierungsprojekte mindestens in den folgenden zwei Jahren abgesichert sind, wurden ermittelt",
+                    "de": "Die finanziellen Ressourcen (Eigenmittel, Zuschüsse, Darlehen), mit denen die Digitalisierungsprojekte mindestens in den folgenden zwei Jahren abgesichert sind, wurden ermittelt.",
                     "en": "Financial resources (own funds, grants, loans) are identified to secure digitalisation projects during at least the following two years"
                   }
                 },
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Die IKT-Infrastrukturen sind für eine Unterstützung der Digitalisierungspläne bereit",
+                    "de": "Die IKT-Infrastrukturen (Informations- und Kommunikationstechnologie-Infrastrukturen) sind für eine Unterstützung der Digitalisierungspläne bereit.",
                     "en": "ICT infrastructures are ready to support digitalisation plans"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "IKT-Fachpersonal wurde eingestellt bzw. ein entsprechender Unterauftrag vergeben (oder es wurde ermittelt, wie viele Stellen bzw. Untervergaben erforderlich sind)",
+                    "de": "IKT-Fachpersonal wurde eingestellt bzw. ein entsprechender Unterauftrag vergeben (oder es wurde ermittelt, wie viele Stellen bzw. Untervergaben erforderlich sind).",
                     "en": "ICT specialists are employed/sub-contracted (or hiring/subcontracting needs have been identified)"
                   }
                 },
                 {
                   "value": "Item 5",
                   "text": {
-                    "de": "Es gibt ein angemessenes politisches Engagement, um die notwendigen organisatorischen Veränderungen vorzunehmen",
+                    "de": "Es gibt ein angemessenes politisches Engagement, um die notwendigen organisatorischen Veränderungen vorzunehmen.",
                     "en": "There is appropriate level of political commitment to lead the necessary organisational changes needed"
                   }
                 },
                 {
                   "value": "Item 6",
                   "text": {
-                    "de": "Die Leitung der Organisationseinheiten/Abteilungen und ihre Beschäftigten sind vorbereitet und bereit, Digitalisierungspläne zu unterstützen",
+                    "de": "Die Leitung der Organisationseinheiten/Abteilungen und ihre Beschäftigten sind vorbereitet und bereit, Digitalisierungspläne zu unterstützen.",
                     "en": "Organisational units'/departments' management and their staff are prepared and ready to support digitalisation plans"
                   }
                 },
                 {
                   "value": "Item 7",
                   "text": {
-                    "de": "Interne und externe operative Prozesse können angepasst werden, wenn die Digitalisierung dies erfordert",
+                    "de": "Interne und externe operative Prozesse können angepasst werden, wenn die Digitalisierung dies erfordert.",
                     "en": "Internal and external operational processes can be adapted if isRequired by digitalisation"
                   }
                 },
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Offline-Dienste können online bereitgestellt oder durch digitale Technologien weiter modernisiert werden",
+                    "de": "Offline-Dienste können online bereitgestellt oder durch digitale Technologien weiter modernisiert werden.",
                     "en": "Offline services are ready to be brought online or further modernised by digital technologies "
                   }
                 },
                 {
                   "value": "Item 9",
                   "text": {
-                    "de": "Die Zufriedenheit der Bürgerinnen und Bürger und anderer Interessengruppen (Unternehmen, NRO usw.) mit Online-Diensten/Interaktionen wird regelmäßig überwacht\n(z. B. durch Feedback-Formulare, E-Mail-Austausch, soziale Medien usw.)",
+                    "de": "Die Zufriedenheit der Bürger:innen und anderer Interessengruppen (Unternehmen, NRO usw.) mit Online-Diensten/Interaktionen wird regelmäßig überwacht (z. B. durch Feedback-Formulare, E-Mail-Austausch, soziale Medien usw.).",
                     "en": "Citizens' and other stakeholders' (businesses, NGOs etc) satisfaction with online services/interactions is monitored regularly\n(e.g. via feedback forms, emails exchanges, social media, etc.)"
                   }
                 },
@@ -644,7 +621,7 @@ export const EUDmaJSON = {
               "type": "matrixdropdown",
               "name": "EUPSOQuestion16",
               "title": {
-                "de": "In welchen der folgenden operativen Bereiche hat Ihre Einrichtung bereits in die Digitalisierung investiert, und in welchen Bereichen plant sie, in Zukunft zu investieren? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "In welche der folgenden operativen Bereiche hat Ihre Einrichtung bereits investiert und in welchen sind zukünftige Investitionen geplant? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "In which of the following operational areas has your organisation already invested in digitalisation and in which ones does it plan to invest in the future? Please select all options that apply."
               },
               "defaultValue": " ",
@@ -685,7 +662,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 2",
                   "text": {
-                    "de": "Externe Maßnahmen (Governance-Prozesse einschließlich neuer Formen der Beteiligung von Bürgerinnen und Bürgern)",
+                    "de": "Externe Maßnahmen (Governance-Prozesse einschließlich neuer Formen der Beteiligung von Bürger:innen)",
                     "en": "External operations (governance processes including new ways of citizen participation)"
                   }
                 },
@@ -727,7 +704,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 8",
                   "text": {
-                    "de": "Projektplanung und management",
+                    "de": "Projektplanung und -management",
                     "en": "Project planning and management"
                   }
                 }
@@ -777,14 +754,14 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Web-Formulare oder -Foren für die Kommunikation mit den Bürgerinnen und Bürgern",
+                    "de": "Web-Formulare oder -Foren für die Kommunikation mit den Bürger*innen",
                     "en": "Web-based forms or forums to communicate with citizens"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "Live-Chats, soziale Netzwerke und/oder Chatbots für die Kommunikation mit den Bürgerinnen und Bürgern",
+                    "de": "Live-Chats, soziale Netzwerke und/oder Chatbots für die Kommunikation mit den Bürger*innen",
                     "en": "Live chats, social networks and/or chatbots to communicate with citizens"
                   }
                 },
@@ -812,7 +789,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Instrumente für digitale öffentliche Dienste (Online-Interaktion mit Bürgerinnen und Bürgern und/oder Unternehmen, Online-Dienstleistungserbringung)",
+                    "de": "Instrumente für digitale öffentliche Dienste (Online-Interaktion mit Bürger*innen und/oder Unternehmen, Online-Dienstleistungserbringung)",
                     "en": "Tools for digital public services (online interaction with citizens and/or businesses, online service delivery)"
                   }
                 },
@@ -991,7 +968,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion19",
               "title": {
-                "de": "Was tut Ihre Einrichtung, um ihre Beschäftigten für die Digitalisierung zu qualifizieren und weiterzubilden? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Was unternimmt Ihre Einrichtung, um ihre Beschäftigten für die Digitalisierung zu qualifizieren und weiterzubilden? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "What does your organisation do to re-skill and up-skill its staff for digitalisation? Please select all options that apply."
               },
               "defaultValue": [
@@ -1053,7 +1030,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion20",
               "title": {
-                "de": "Wie bindet Ihre Einrichtung bei der Einführung neuer digitaler Lösungen ihre Beschäftigten und Endnutzer (Bürgerinnen und Bürger/Unternehmen im Falle digitaler öffentlicher Dienste) ein und befähigt sie? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Wie bindet Ihre Einrichtung Beschäftigte sowie Endnutzer:innen (z. B. Bürger:innen und Unternehmen) bei der Einführung neuer digitaler Lösungen ein und wie werden diese befähigt? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "When adopting new digital solutions, how does your organisation engage and empower its staff and end-users (citizens/businesses in case of digital public services)? Please select all options that apply."
               },
               "defaultValue": [
@@ -1119,14 +1096,14 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 9",
                   "text": {
-                    "de": "Stellt den Endnutzern ein Team bzw. einen Dienst (intern/extern) zur digitalen Unterstützung zur Verfügung",
+                    "de": "Stellt den Endnutzer:innen ein Team bzw. einen Dienst (intern/extern) zur digitalen Unterstützung zur Verfügung",
                     "en": "Puts at end-users disposal a digital support team/service (internal/external)"
                   }
                 },
                 {
                   "value": "Item 10",
                   "text": {
-                    "de": "Nutzt Rückmeldungen von Endnutzern (Bürgerinnen und Bürgern/Unternehmen) zur Verbesserung digitaler öffentlicher Dienste",
+                    "de": "Nutzt Rückmeldungen von Endnutzer:innen (Bürger:innen/Unternehmen) zur Verbesserung digitaler öffentlicher Dienste",
                     "en": "Uses feedback from end-users (citizens/businesses) to improve digital public services"
                   }
                 }
@@ -1162,63 +1139,63 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Die Einrichtung verfügt über eine Datenverwaltungsstrategie/einen Datenverwaltungsplan/einen Maßnahmenkatalog",
+                    "de": "Die Einrichtung verfügt über eine Datenverwaltungsstrategie/einen Datenverwaltungsplan/einen Maßnahmenkatalog.",
                     "en": "The organisation has in place a data management policy/plan/set of measures"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Die Einrichtung verwendet keine Papierformulare zur Erhebung von Daten",
+                    "de": "Die Einrichtung verwendet keine Papierformulare zur Erhebung von Daten.",
                     "en": "The organisation does not use paper-based forms to collect data"
                   }
                 },
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Daten werden in der Einrichtung nur digital gespeichert\n(z. B. in Büroanwendungen, E-Mail-Ordnern, eigenständigen Anwendungen, Datenbanken, Dokumentenverwaltungssystemen, ERP usw.)",
+                    "de": "Daten werden in der Einrichtung nur digital gespeichert\n(z. B. in Büroanwendungen, E-Mail-Ordnern, eigenständigen Anwendungen, Datenbanken, Dokumentenverwaltungssystemen, ERP usw.).",
                     "en": "Data are stored only digitally in the organisation\n(e.g., in office applications, email folders, stand-alone applications, databases, document management systems, ERP etc.)"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "Daten werden fachgerecht integriert\n(z. B. durch interoperable Systeme, Anwendungsprogrammierschnittstellen), auch wenn sie auf verschiedene Systeme verteilt sind",
+                    "de": "Daten werden fachgerecht integriert\n(z. B. durch interoperable Systeme, Anwendungsprogrammierschnittstellen), auch wenn sie auf verschiedene Systeme verteilt sind.",
                     "en": "Data are properly integrated\n(e.g. through interoperable systems, Application Programming Interfaces) even when they are distributed amongst different systems"
                   }
                 },
                 {
                   "value": "Item 5",
                   "text": {
-                    "de": "Daten sind von verschiedenen Geräten und Standorten aus in Echtzeit zugänglich",
+                    "de": "Daten sind von verschiedenen Geräten und Standorten aus in Echtzeit zugänglich.",
                     "en": "Data are accessible in real-time from different devices and locations"
                   }
                 },
                 {
                   "value": "Item 6",
                   "text": {
-                    "de": "Erfasste Daten werden systematisch analysiert und für die Entscheidungsfindung aufbereitet",
+                    "de": "Erfasste Daten werden systematisch analysiert und für die Entscheidungsfindung aufbereitet.",
                     "en": "Collected data are systematically analysed and reported for decision-making"
                   }
                 },
                 {
                   "value": "Item 7",
                   "text": {
-                    "de": "Daten der Einrichtung werden durch Daten Dritter (d. h. Daten anderer öffentlicher Einrichtungen und/oder von Akteuren des Privatsektors) ergänzt",
+                    "de": "Daten der Einrichtung werden durch Daten Dritter (d. h. Daten anderer öffentlicher Einrichtungen und/oder von Akteuren des Privatsektors) ergänzt.",
                     "en": "Organisation's data are enriched with third-party data (i.e. data from other public sector organisations and/or private sector actors)"
                   }
                 },
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Datenanalysen der Einrichtung sind ohne Hilfe von Experten zugänglich\n(z. B. über Dashboards)",
+                    "de": "Datenanalysen der Einrichtung sind ohne Hilfe von Experten zugänglich\n(z. B. über Dashboards).",
                     "en": "Organisation's data analytics are accessible without the need of expert assistance on a regular base\n(e.g. through dashboards)"
                   }
                 },
                 {
                   "value": "Item 9",
                   "text": {
-                    "de": "Daten der Einrichtung sind über einen Strategieplan für offene Daten öffentlich zugänglich",
+                    "de": "Daten der Einrichtung sind über einen Strategieplan für offene Daten öffentlich zugänglich.",
                     "en": "Organisation's data are available publicly via an Open Data policy plan"
                   }
                 }
@@ -1238,42 +1215,42 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "In unserer Einrichtung gibt es eine Strategie/einen Maßnahmenkatalog für die Datensicherheit",
+                    "de": "In unserer Einrichtung gibt es eine Strategie/einen Maßnahmenkatalog für die Datensicherheit.",
                     "en": "A data security policy/set of measures is in place in our organisation"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Es gibt Pläne und Maßnahmen zum Schutz der Daten der Einrichtung vor Cyberangriffen",
+                    "de": "Es gibt Pläne und Maßnahmen zum Schutz der Daten der Einrichtung vor Cyberangriffen.",
                     "en": "There are established plans and measures to safeguard organisation's data from cyberattacks"
                   }
                 },
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Die Beschäftigten werden regelmäßig zu Cybersicherheits- und Datenschutzthemen informiert und geschult",
+                    "de": "Die Beschäftigten werden regelmäßig zu Cybersicherheits- und Datenschutzthemen informiert und geschult.",
                     "en": "Staff is regularly informed and trained on cybersecurity and data protection issues/risks"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "Sicherheitsbedrohungen werden regelmäßig überwacht und bewertet",
+                    "de": "Sicherheitsbedrohungen werden regelmäßig überwacht und bewertet.",
                     "en": "Cyber-threats are regularly monitored and assessed"
                   }
                 },
                 {
                   "value": "Item 5",
                   "text": {
-                    "de": "Eine vollständige Sicherungskopie kritischer Daten wird gepflegt (an einem externen Standort/in der Cloud)",
+                    "de": "Eine vollständige Sicherungskopie kritischer Daten wird gepflegt (an einem externen Standort/in der Cloud).",
                     "en": "A full backup copy of critical data is maintained (off-site/in the cloud)"
                   }
                 },
                 {
                   "value": "Item 6",
                   "text": {
-                    "de": "Es gibt einen Plan zur Aufrechterhaltung des Geschäftsbetriebs bei unvorhergesehenen Totalausfällen\n(z. B. bei einer Sperrung aller Daten durch einen Ransomware-Angriff oder physischen Schäden an der IT-Infrastruktur)",
+                    "de": "Es gibt einen Plan zur Aufrechterhaltung des Geschäftsbetriebs bei unvorhergesehenen Totalausfällen\n(z. B. bei einer Sperrung aller Daten durch einen Ransomware-Angriff oder physischen Schäden an der IT-Infrastruktur).",
                     "en": "A business continuity plan is in place in case of catastrophic failures\n(e.g. all data locked by a ransomware attack or physical damage to the IT infrastructure)"
                   }
                 }
@@ -1299,7 +1276,7 @@ export const EUDmaJSON = {
               "type": "matrixdropdown",
               "name": "EUPSOQuestion23",
               "title": {
-                "de": "Was unternimmt Ihre Organisation bei der Digitalisierung von Prozessen und Dienstleistungen, um Daten, Informationen und Wissen mit anderen öffentlichen Einrichtungen auszutauschen? Bitte wählen Sie alle Optionen, die für Ihre Einrichtung gelten, anhand der angegebenen Skala aus.",
+                "de": "Was unternimmt Ihre Organisation bei der Digitalisierung von Prozessen und Dienstleistungen, um Daten, Informationen und Wissen mit anderen öffentlichen Einrichtungen auszutauschen? Bitte wählen Sie alle Optionen, die für Ihre Einrichtung gelten.",
                 "en": "While digitalising processes and services, what does your organization do to share data, information and knowledge with other public sector organizations? Please select all options that apply to your organisation using the provided scale."
               },
               "defaultValue": " ",
@@ -1368,7 +1345,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 6",
                   "text": {
-                    "de": "Endnutzern keine technologiespezifischen Lösungen auferlegen",
+                    "de": "Endnutzer:innen keine technologiespezifischen Lösungen auferlegen",
                     "en": "Do not impose any technology-specific solutions on end-user"
                   }
                 },
@@ -1382,7 +1359,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 8",
                   "text": {
-                    "de": "Endnutzern Optionen für den Zugang zu Dienstleistungen bieten, die ihren Bedürfnissen am besten entsprechen",
+                    "de": "Endnutzer:innen Optionen für den Zugang zu Dienstleistungen bieten, die ihren Bedürfnissen am besten entsprechen",
                     "en": "Give end-users options to access services that best suits their needs"
                   }
                 },
@@ -1396,7 +1373,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 10",
                   "text": {
-                    "de": "Nutzer nur einmalig und nur nach relevanten Informationen fragen",
+                    "de": "Nutzer:innen nur einmalig und nur nach relevanten Informationen fragen",
                     "en": "Ask users once-only and relevant-only information"
                   }
                 },
@@ -1523,7 +1500,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Digitale Anwendungen zur Förderung eines verantwortungsvollen Verhaltens der Bürgerinnen und Bürger",
+                    "de": "Digitale Anwendungen zur Förderung eines verantwortungsvollen Verhaltens der Bürger*innen",
                     "en": "Digital applications to encourage responsible citizens behaviour"
                   }
                 },
@@ -1605,7 +1582,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 5",
                   "text": {
-                    "de": "Recycling/Wiederverwendung von alter technischer Ausrüstung wird von der Einrichtung aktiv betrieben",
+                    "de": "Recycling / Wiederverwendung von alter technischer Ausrüstung wird von der Einrichtung aktiv betrieben",
                     "en": "Recycling/re-use of old technological equipment is actively practised by the organisation"
                   }
                 }
@@ -1635,7 +1612,7 @@ export const EUDmaJSON = {
                 "en": "Date"
               },
               "defaultValue": new Date().toISOString().split('T')[0],
-              "isRequired": true,
+              "isRequired": false,
               "visible": false,
               "inputType": "date"
             },
@@ -1643,11 +1620,11 @@ export const EUDmaJSON = {
               "type": "text",
               "name": "EUSMEQuestion2",
               "title": {
-                "de": "Bitte geben Sie den Namen des Unternehmens an, in dem Sie beschäftigt sind.",
+                "de": "Name des Unternehmens, in der Sie arbeiten",
                 "en": "Please enter the name of the company you work for."
               },
               "defaultValue": " ",
-              "isRequired": true,
+              "isRequired": false,
             },
             {
               "type": "panel",
@@ -1660,7 +1637,7 @@ export const EUDmaJSON = {
                     "de": "Identifizierungsnummer (USt-IdNr. aus Websitenimpressum, Handelsregisternummer oder ähnliches).",
                     "en": "Identification Number (VAT or equivalent)."
                   },
-                  "isRequired": true
+                  "isRequired": false
                 },
                 {
                   "type": "panel",
@@ -1673,7 +1650,7 @@ export const EUDmaJSON = {
                         "de": "Bitte geben Sie hier Ihren vollständigen Namen an.",
                         "en": "Please enter your full name here."
                       },
-                      "isRequired": true
+                      "isRequired": false
                     },
                     {
                       "type": "text",
@@ -1682,7 +1659,7 @@ export const EUDmaJSON = {
                         "de": "Welche Funktion haben Sie im Unternehmen?",
                         "en": "What is your role in the company?"
                       },
-                      "isRequired": true
+                      "isRequired": false
                     },
                     {
                       "type": "text",
@@ -1692,7 +1669,7 @@ export const EUDmaJSON = {
                         "en": "Your email address."
                       },
                       "inputType": "email",
-                      "isRequired": true
+                      "isRequired": false
                     },
                     {
                       "type": "text",
@@ -1702,7 +1679,7 @@ export const EUDmaJSON = {
                         "en": "Your Telephonenumber."
                       },
                       "inputType": "tel",
-                      "isRequired": true
+                      "isRequired": false
                     }
                   ],
                   "description": "Kontaktperson"
@@ -1723,7 +1700,7 @@ export const EUDmaJSON = {
                     "de": "Jahr der Unternehmensgründung (auch geschätzt).",
                     "en": "Enterprise’s foundation year (also estimated)."
                   },
-                  "isRequired": true,
+                  "isRequired": false,
                   "validators": [
                     {
                       "type": "regex",
@@ -1738,7 +1715,7 @@ export const EUDmaJSON = {
                 {
                   "type": "radiogroup",
                   "name": "EUSMEQuestion10",
-                  "isRequired": true,
+                  "isRequired": false,
                   "title": {
                     "de": "Zahl der Beschäftigten der Einrichtung.",
                     "en": "Organisation’s staff size."
@@ -1778,10 +1755,10 @@ export const EUDmaJSON = {
                   "type": "multipletext",
                   "name": "EUSMEQuestion11",
                   "title": {
-                    "de": "Vollständige Anschrift.",
+                    "de": "Vollständige Anschrift des Unternehmens",
                     "en": "Full address."
                   },
-                  "isRequired": true,
+                  "isRequired": false,
                   "items": [
                     {
                       "name": "text1",
@@ -1815,8 +1792,8 @@ export const EUDmaJSON = {
                 }
               ],
               "description": {
-                "de": "Allgemeine Angaben",
-                "en": "General Data"
+                "de": "M1.2 Tätigkeitssektor",
+                "en": "M1.2 Sector of Activity"
               }
             },
             {
@@ -2005,7 +1982,7 @@ export const EUDmaJSON = {
                         }
                       ],
                       "showOtherItem": false,
-                      "isRequired": true
+                      "isRequired": false
                     },
                     {
                       "type": "dropdown",
@@ -2326,8 +2303,8 @@ export const EUDmaJSON = {
             }
           ],
           "description": {
-            "de": "M1.2. Tätigkeitssektor",
-            "en": "M1.2. Sector of Activity"
+            "de": "M1.2 Tätigkeitssektor",
+            "en": "M1.2 Sector of Activity"
           }
         }
       ],
@@ -2358,7 +2335,7 @@ export const EUDmaJSON = {
             }
           ],
           "description": {
-            "de": "Die Fragen in diesem Modul zielen darauf ab, den Digitalisierungsgrad Ihres Unternehmens zu messen. Die Angaben sollen dabei helfen, einzuordnen, an welchem Punkt des digitalen Wandels Ihr Unternehmen zurzeit steht, und zu ermitteln, in welchen Bereichen es Unterstützung durch das EDIH benötigen könnte. Sie werden auch dazu beitragen, die Dienstleistungen, die das EDIH für Ihr Unternehmen später erbringt, zu bewerten, und die Maßnahmen und Finanzinstrumente der EU zur Unterstützung des EDIH zu optimieren. Folgende Dimensionen werden bewertet:",
+            "de": "Die Fragen in diesem Modul messen den digitalen Reifegrad Ihres Unternehmens. Ihre Angaben helfen uns dabei, Ihren aktuellen Stand im digitalen Wandel einzuordnen und gezielten Unterstützungsbedarf durch das EDIH zu identifizieren. Zudem dienen Ihre Antworten als Basis, um die Qualität unserer Dienstleistungen sowie die Wirksamkeit der EU-Förderinstrumente zu evaluieren.\n\nDie Bewertung erfolgt entlang der folgenden Dimensionen",
             "en": "The Questions in this module aim to measure the digital maturity of your enterprise. This information will help to characterise the departing point of the digital transformation journey of your enterprise, identifying areas where it might need EDIH support. It will also help to assess the services eventually provided by the EDIH to your enterprise as well as to fine tune the EU policies and financial instruments supporting EDIHs. The following six dimensions will be assessed:"
           }
         }
@@ -2501,71 +2478,71 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Der Digitalisierungsbedarf ist ermittelt und auf die Unternehmensziele abgestimmt",
+                    "de": "Der Digitalisierungsbedarf ist ermittelt und auf die Unternehmensziele abgestimmt.",
                     "en": "Digitalisation needs are identified and are aligned with business objectives"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Die finanziellen Ressourcen (Eigenkapital, Darlehen, Subventionen), mit denen die Digitalisierung mindestens für ein Jahr abgesichert werden kann, sind ermittelt ",
+                    "de": "Die finanziellen Ressourcen (Eigenkapital, Darlehen, Subventionen), mit denen die Digitalisierung mindestens für ein Jahr abgesichert werden kann, sind ermittelt.",
                     "en": "Financial resources (own, loans, subsidies) are identified to secure digitalisation during at least one year"
                   }
                 },
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Die IT-Infrastrukturen zur Unterstützung der Digitalisierungspläne sind bereit",
+                    "de": "Die IKT-Infrastrukturen (Informations- und Kommunikationstechnologie-Infrastrukturen) sind für eine Unterstützung der Digitalisierungspläne bereit.",
                     "en": "IT infrastructures are ready to support digitalisation plans"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "IKT-Fachpersonal wurde eingestellt bzw. ein entsprechender Unterauftrag vergeben (oder es wurde ermittelt, wie viele Stellen bzw. Untervergaben erforderlich sind)",
-                    "en": "ICT specialists are employed/sub-contracted (or hiring/subcontracting needs have been identified) "
+                    "de": "IKT-Fachpersonal wurde eingestellt bzw. ein entsprechender Unterauftrag vergeben (oder es wurde ermittelt, wie viele Stellen bzw. Untervergaben erforderlich sind).",
+                    "en": "ICT specialists are employed/sub-contracted (or hiring/subcontracting needs have been identified)"
                   }
                 },
                 {
                   "value": "Item 5",
                   "text": {
-                    "de": "Die Unternehmensleitung ist bereit, die notwendigen organisatorischen Änderungen vorzunehmen",
+                    "de": "Die Unternehmensleitung ist bereit, die notwendigen organisatorischen Veränderungen vorzunehmen.",
                     "en": "Enterprise’s management is ready to lead the necessary organisational changes"
                   }
                 },
                 {
                   "value": "Item 6",
                   "text": {
-                    "de": "Die betroffenen Unternehmensabteilungen und deren Personal sind bereit, die Digitalisierungspläne zu unterstützen",
+                    "de": "Die betroffenen Unternehmensabteilungen und deren Personal sind bereit, die Digitalisierungspläne zu unterstützen.",
                     "en": "Concerned business departments and their staff are ready to support digitalisation plans"
                   }
                 },
                 {
                   "value": "Item 7",
                   "text": {
-                    "de": "Die Geschäftsarchitektur und die operativen Prozesse können angepasst werden, wenn die Digitalisierung dies erfordert",
+                    "de": "Die Geschäftsarchitektur und die operativen Prozesse können angepasst werden, wenn die Digitalisierung dies erfordert.",
                     "en": "Business architecture and operational processes can be adapted if required by digitalisation"
                   }
                 },
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Hergestellte Produkte werden bereits als Dienstleistung vermarktet (sogenannte Servitization) oder durch Dienstleistungen ergänzt, die mithilfe digitaler Technologien ermöglicht werden. ",
+                    "de": "Hergestellte Produkte werden bereits als Dienstleistung vermarktet (sogenannte Servitization) oder durch Dienstleistungen ergänzt, die mithilfe digitaler Technologien ermöglicht werden.",
                     "en": "Manufactured products are already commercialised as a service (so-called Servitisation) or supplemented by services enabled by digital technologies"
                   }
                 },
                 {
                   "value": "Item 9",
                   "text": {
-                    "de": "Die Zufriedenheit der Kunden und Partner mit den Online-Diensten/Interaktionen wird regelmäßig überwacht (über soziale Medien, Aktivitäten des elektronischen Handels, E-Mail Austausch usw.) ",
-                    "en": "Clients’ and partners’ satisfaction with online services/interactions is monitored regularly (on social media channels, e-commerce operations, emails exchanges, etc.) "
+                    "de": "Die Zufriedenheit der Kunden und Partner mit den Online-Diensten/Interaktionen wird regelmäßig überwacht (über soziale Medien, Aktivitäten des elektronischen Handels, E-Mail Austausch usw.).",
+                    "en": "Clients’ and partners’ satisfaction with online services/interactions is monitored regularly (on social media channels, e-commerce operations, emails exchanges, etc.)"
                   }
                 },
                 {
                   "value": "Item 10",
                   "text": {
-                    "de": "Die Risiken einer Digitalisierung\n(z. B. nicht geplante Auswirkungen auf andere Geschäftsbereiche) werden bedacht ",
-                    "en": "Risks of digitalisation\n(e.g. non-planned effects over other business areas) are considered"
+                    "de": "Die Risiken einer Digitalisierung (z. B. nicht geplante Auswirkungen auf andere Geschäftsbereiche) werden bedacht.",
+                    "en": "Risks of digitalisation (e.g. non-planned effects over other business areas) are considered"
                   }
                 }
               ]
