@@ -45,7 +45,7 @@ export const EUDmaJSON = {
             "de": "Wählen Sie Ihren Unternehmens-/Organisationstyp",
             "en": "Select your company/organization type"
           },
-          "isRequired": true,
+          "isRequired": false,
           "choices": [
             {
               "value": "PSO",
@@ -70,7 +70,7 @@ export const EUDmaJSON = {
             "de": "Bitte wählen Sie den Zeitpunkt der Durchführung des Digitalchecks",
             "en": "Please choose the time of the digital maturity assessment"
           },
-          "isRequired": true,
+          "isRequired": false,
           "choices": [
             {
               "value": "T0",
@@ -1790,11 +1790,7 @@ export const EUDmaJSON = {
                     }
                   ]
                 }
-              ],
-              "description": {
-                "de": "M1.2 Tätigkeitssektor",
-                "en": "M1.2 Sector of Activity"
-              }
+              ]
             },
             {
               "type": "panel",
@@ -3386,6 +3382,23 @@ export const EUDmaJSON = {
         }
       ],
       "visibleIf": "{EUDMAQuestion1} = 'SME'"
+    },
+    {
+      "name": "EUDMAPageFinal",
+      "title": {
+        "de": "Bereit zum Absenden",
+        "en": "Ready to submit"
+      },
+      "elements": [
+        {
+          "type": "html",
+          "name": "final-message",
+          "html": {
+            "de": "<p>Sie haben alle gewünschten Fragen beantwortet. Bitte klicken Sie unten auf 'Abschließen', um Ihre Reifegrad-Ergebnisse anzuzeigen.</p>",
+            "en": "<p>You have answered all desired questions. Please click 'Complete' below to view your maturity assessment results.</p>"
+          }
+        }
+      ]
     }
   ],
   "showQuestionNumbers": "off",
