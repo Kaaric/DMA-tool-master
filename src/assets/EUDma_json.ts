@@ -50,7 +50,7 @@ export const EUDmaJSON = {
             {
               "value": "PSO",
               "text": {
-                "de": "Öffentliche Einrichtung oder Organisation",
+                "de": "Öffentliche Organisation",
                 "en": "Public sector organization"
               }
             },
@@ -160,7 +160,7 @@ export const EUDmaJSON = {
                   "type": "text",
                   "name": "EUPSOQuestion5",
                   "title": {
-                    "de": "Ihre Funktion in der Einrichtung",
+                    "de": "Ihre Funktion in der Organisation",
                     "en": "Your role in the organisation."
                   },
                   "defaultValue": " ",
@@ -205,7 +205,7 @@ export const EUDmaJSON = {
               "type": "text",
               "name": "EUPSOQuestion9",
               "title": {
-                "de": "Die Art Ihrer öffentlichen Einrichtung",
+                "de": "Die Art Ihrer öffentlichen Organisation",
                 "en": "The type of your public sector organisation"
               },
               "defaultValue": " ",
@@ -215,7 +215,7 @@ export const EUDmaJSON = {
               "type": "radiogroup",
               "name": "EUPSOQuestion10",
               "title": {
-                "de": "Die Zahl der Beschäftigten der Einrichtung",
+                "de": "Die Zahl der Beschäftigten der Organisation",
                 "en": "Organisation’s staff size."
               },
               "defaultValue": " ",
@@ -478,7 +478,7 @@ export const EUDmaJSON = {
                 }
               ],
               "title": {
-                "de": "Zu welchem der folgenden großen Regierungsbereiche gehört Ihre Einrichtung? Bitte wählen Sie bis zu zwei Optionen aus",
+                "de": "Zu welchem der folgenden großen Regierungsbereiche gehört Ihre Organisation? Bitte wählen Sie bis zu zwei Optionen aus",
                 "en": "In which of the following government broad areas does your organisation belong2? Please select up to two options"
               },
             }
@@ -495,7 +495,7 @@ export const EUDmaJSON = {
         "en": "MODULE 1: Customer Data"
       },
       "description": {
-        "de": "Bitte geben Sie in diesem Modul allgemeine Basisinformationen über die öffentliche Einrichtung an, die an einer EDIH-Unterstützung interessiert ist. Diese Daten werden für die weitere Kommunikation benötigt. Bei den Feldern, die mit einem roten * versehen sind, handelt es sich um ein Pflichtfeld. Sollten Sie Ihre Ergebnisse nach dem Durchführen des Digitalchecks nicht an das EDIH senden wollen, werden die angegebenen Informationen nicht gespeichert.",
+        "de": "Bitte geben Sie in diesem Modul allgemeine Basisinformationen über die öffentliche Organisation an, die an einer EDIH-Unterstützung interessiert ist. Diese Daten werden für die weitere Kommunikation benötigt. Bei den Feldern, die mit einem roten * versehen sind, handelt es sich um ein Pflichtfeld. Sollten Sie Ihre Ergebnisse nach dem Durchführen des Digitalchecks nicht an das EDIH senden wollen, werden die angegebenen Informationen nicht gespeichert.",
         "en": "Please provide general basic information in this module about the public institution that is interested in EDIH support. This data is required for further communication. Fields marked with a red * are mandatory. If you do not wish to send your results to the EDIH after completing the digital check, the information you provide will not be saved."
       }
     },
@@ -516,7 +516,7 @@ export const EUDmaJSON = {
             }
           ],
           "description": {
-            "de": "Die Fragen in diesem Modul messen den digitalen Reifegrad Ihrer Einrichtung. Ihre Angaben helfen uns dabei, Ihren aktuellen Stand im digitalen Wandel einzuordnen und gezielten Unterstützungsbedarf durch das EDIH zu identifizieren. Zudem dienen Ihre Antworten als Basis, um die Qualität unserer Dienstleistungen sowie die Wirksamkeit der EU-Förderinstrumente zu evaluieren.\n\nDie Bewertung erfolgt entlang der folgenden Dimensionen",
+            "de": "Die Fragen in diesem Modul messen den digitalen Reifegrad Ihrer Organisation. Ihre Angaben helfen uns dabei, Ihren aktuellen Stand im digitalen Wandel einzuordnen und gezielten Unterstützungsbedarf durch das EDIH zu identifizieren. Zudem dienen Ihre Antworten als Basis, um die Qualität unserer Dienstleistungen sowie die Wirksamkeit der EU-Förderinstrumente zu evaluieren.\n\nDie Bewertung erfolgt entlang der folgenden Dimensionen",
             "en": "Questions in this module aim to measure the digital maturity of your organisation. This information will help to characterise the point of departure for the digital transformation journey of your organisation, identifying areas where it might need EDIH support. It will also help to assess the services eventually provided by the EDIH, as well as to help assess the EU policies and financial instruments supporting EDIHs. The following dimensions will be assessed (applying the scoring criteria detailed in the end page)"
           }
         }
@@ -538,7 +538,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion15",
               "title": {
-                "de": "Welche Vorkehrungen zur digitalen Transformation wurden in Ihrer Einrichtung bereits umgesetzt? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Welche Vorkehrungen zur digitalen Transformation wurden in Ihrer Organisation bereits umgesetzt? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "In which of the following ways is your organisation prepared for (more) digitalisation? Please select all options that apply."
               },
               "defaultValue": [
@@ -621,7 +621,7 @@ export const EUDmaJSON = {
               "type": "matrixdropdown",
               "name": "EUPSOQuestion16",
               "title": {
-                "de": "In welche der folgenden operativen Bereiche hat Ihre Einrichtung bereits investiert und in welchen sind zukünftige Investitionen geplant? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "In welche der folgenden operativen Bereiche hat Ihre Organisation bereits investiert und in welchen sind zukünftige Investitionen geplant? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "In which of the following operational areas has your organisation already invested in digitalisation and in which ones does it plan to invest in the future? Please select all options that apply."
               },
               "defaultValue": " ",
@@ -730,7 +730,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion17",
               "title": {
-                "de": "Welche der folgenden digitalen Technologien und Lösungen werden von Ihrer Einrichtung bereits eingesetzt? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Welche der folgenden digitalen Technologien und Lösungen werden von Ihrer Organisation bereits eingesetzt? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "Which of the following digital technologies and solutions are already used by your organisation? Please select all options that apply."
               },
               "defaultValue": [
@@ -754,14 +754,14 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Web-Formulare oder -Foren für die Kommunikation mit den Bürger*innen",
+                    "de": "Web-Formulare oder -Foren für die Kommunikation mit den Bürger:innen",
                     "en": "Web-based forms or forums to communicate with citizens"
                   }
                 },
                 {
                   "value": "Item 4",
                   "text": {
-                    "de": "Live-Chats, soziale Netzwerke und/oder Chatbots für die Kommunikation mit den Bürger*innen",
+                    "de": "Live-Chats, soziale Netzwerke und/oder Chatbots für die Kommunikation mit den Bürger:innen",
                     "en": "Live chats, social networks and/or chatbots to communicate with citizens"
                   }
                 },
@@ -789,7 +789,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Instrumente für digitale öffentliche Dienste (Online-Interaktion mit Bürger*innen und/oder Unternehmen, Online-Dienstleistungserbringung)",
+                    "de": "Instrumente für digitale öffentliche Dienste (Online-Interaktion mit Bürger:innen und/oder Unternehmen, Online-Dienstleistungserbringung)",
                     "en": "Tools for digital public services (online interaction with citizens and/or businesses, online service delivery)"
                   }
                 },
@@ -806,7 +806,7 @@ export const EUDmaJSON = {
               "type": "matrixdropdown",
               "name": "EUPSOQuestion18",
               "title": {
-                "de": "Welche der folgenden fortgeschrittenen digitalen Technologien werden von Ihrer Einrichtung bereits eingesetzt? Bitte wählen Sie alle zutreffenden Optionen anhand der vorgegebenen Skala aus.",
+                "de": "Welche der folgenden fortgeschrittenen digitalen Technologien werden von Ihrer Organisation bereits eingesetzt? Bitte wählen Sie alle zutreffenden Optionen anhand der vorgegebenen Skala aus.",
                 "en": "Which of the following advanced digital technologies are already used by your organisation? Please choose all options that apply using the provided scale."
               },
               "defaultValue": {
@@ -968,7 +968,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion19",
               "title": {
-                "de": "Was unternimmt Ihre Einrichtung, um ihre Beschäftigten für die Digitalisierung zu qualifizieren und weiterzubilden? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Was unternimmt Ihre Organisation, um ihre Beschäftigten für die Digitalisierung zu qualifizieren und weiterzubilden? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "What does your organisation do to re-skill and up-skill its staff for digitalisation? Please select all options that apply."
               },
               "defaultValue": [
@@ -1030,7 +1030,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion20",
               "title": {
-                "de": "Wie bindet Ihre Einrichtung Beschäftigte sowie Endnutzer:innen (z. B. Bürger:innen und Unternehmen) bei der Einführung neuer digitaler Lösungen ein und wie werden diese befähigt? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Wie bindet Ihre Organisation Beschäftigte sowie Endnutzer:innen (z. B. Bürger:innen und Unternehmen) bei der Einführung neuer digitaler Lösungen ein und wie werden diese befähigt? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "When adopting new digital solutions, how does your organisation engage and empower its staff and end-users (citizens/businesses in case of digital public services)? Please select all options that apply."
               },
               "defaultValue": [
@@ -1129,7 +1129,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion21",
               "title": {
-                "de": "Wie werden die Daten Ihrer Einrichtung verwaltet (hinsichtlich Speicherung, Organisation, Zugriff und Nutzung)? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Wie werden die Daten Ihrer Organisation verwaltet (hinsichtlich Speicherung, Organisation, Zugriff und Nutzung)? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "How are your organisation’s data managed (i.e. stored, organised, accessed and exploited)? Please select all options that apply."
               },
               "defaultValue": [
@@ -1139,21 +1139,21 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Die Einrichtung verfügt über eine Datenverwaltungsstrategie/einen Datenverwaltungsplan/einen Maßnahmenkatalog.",
+                    "de": "Die Organisation verfügt über eine Datenverwaltungsstrategie/einen Datenverwaltungsplan/einen Maßnahmenkatalog.",
                     "en": "The organisation has in place a data management policy/plan/set of measures"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Die Einrichtung verwendet keine Papierformulare zur Erhebung von Daten.",
+                    "de": "Die Organisation verwendet keine Papierformulare zur Erhebung von Daten.",
                     "en": "The organisation does not use paper-based forms to collect data"
                   }
                 },
                 {
                   "value": "Item 3",
                   "text": {
-                    "de": "Daten werden in der Einrichtung nur digital gespeichert\n(z. B. in Büroanwendungen, E-Mail-Ordnern, eigenständigen Anwendungen, Datenbanken, Dokumentenverwaltungssystemen, ERP usw.).",
+                    "de": "Daten werden in der Organisation nur digital gespeichert\n(z. B. in Büroanwendungen, E-Mail-Ordnern, eigenständigen Anwendungen, Datenbanken, Dokumentenverwaltungssystemen, ERP usw.).",
                     "en": "Data are stored only digitally in the organisation\n(e.g., in office applications, email folders, stand-alone applications, databases, document management systems, ERP etc.)"
                   }
                 },
@@ -1181,21 +1181,21 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 7",
                   "text": {
-                    "de": "Daten der Einrichtung werden durch Daten Dritter (d. h. Daten anderer öffentlicher Einrichtungen und/oder von Akteuren des Privatsektors) ergänzt.",
+                    "de": "Daten der Organisation werden durch Daten Dritter (d. h. Daten anderer öffentlicher Organisationen und/oder von Akteuren des Privatsektors) ergänzt.",
                     "en": "Organisation's data are enriched with third-party data (i.e. data from other public sector organisations and/or private sector actors)"
                   }
                 },
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Datenanalysen der Einrichtung sind ohne Hilfe von Experten zugänglich\n(z. B. über Dashboards).",
+                    "de": "Datenanalysen der Organisation sind ohne Hilfe von Experten zugänglich\n(z. B. über Dashboards).",
                     "en": "Organisation's data analytics are accessible without the need of expert assistance on a regular base\n(e.g. through dashboards)"
                   }
                 },
                 {
                   "value": "Item 9",
                   "text": {
-                    "de": "Daten der Einrichtung sind über einen Strategieplan für offene Daten öffentlich zugänglich.",
+                    "de": "Daten der Organisation sind über einen Strategieplan für offene Daten öffentlich zugänglich.",
                     "en": "Organisation's data are available publicly via an Open Data policy plan"
                   }
                 }
@@ -1205,7 +1205,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion22",
               "title": {
-                "de": "Sind die Daten Ihrer Einrichtung ausreichend gesichert? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Sind die Daten Ihrer Organisation ausreichend gesichert? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "Are your organisations’ data sufficiently secured? Please select all options that apply."
               },
               "defaultValue": [
@@ -1215,14 +1215,14 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "In unserer Einrichtung gibt es eine Strategie/einen Maßnahmenkatalog für die Datensicherheit.",
+                    "de": "In unserer Organisation gibt es eine Strategie/einen Maßnahmenkatalog für die Datensicherheit.",
                     "en": "A data security policy/set of measures is in place in our organisation"
                   }
                 },
                 {
                   "value": "Item 2",
                   "text": {
-                    "de": "Es gibt Pläne und Maßnahmen zum Schutz der Daten der Einrichtung vor Cyberangriffen.",
+                    "de": "Es gibt Pläne und Maßnahmen zum Schutz der Daten der Organisation vor Cyberangriffen.",
                     "en": "There are established plans and measures to safeguard organisation's data from cyberattacks"
                   }
                 },
@@ -1276,7 +1276,7 @@ export const EUDmaJSON = {
               "type": "matrixdropdown",
               "name": "EUPSOQuestion23",
               "title": {
-                "de": "Was unternimmt Ihre Organisation bei der Digitalisierung von Prozessen und Dienstleistungen, um Daten, Informationen und Wissen mit anderen öffentlichen Einrichtungen auszutauschen? Bitte wählen Sie alle Optionen, die für Ihre Einrichtung gelten.",
+                "de": "Was unternimmt Ihre Organisation bei der Digitalisierung von Prozessen und Dienstleistungen, um Daten, Informationen und Wissen mit anderen öffentlichen Organisationen auszutauschen? Bitte wählen Sie alle Optionen, die für Ihre Organisation gelten.",
                 "en": "While digitalising processes and services, what does your organization do to share data, information and knowledge with other public sector organizations? Please select all options that apply to your organisation using the provided scale."
               },
               "defaultValue": " ",
@@ -1394,7 +1394,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 13",
                   "text": {
-                    "de": "Sicherstellung eines sicheren und vertrauenswürdigen Datenaustauschs mit den Endnutzern",
+                    "de": "Sicherstellung eines sicheren und vertrauenswürdigen Datenaustauschs mit den Endnutzer:innen",
                     "en": "Ensure that data exchange with end-users is secure and trustworthy"
                   }
                 },
@@ -1441,7 +1441,7 @@ export const EUDmaJSON = {
               "type": "checkbox",
               "name": "EUPSOQuestion24",
               "title": {
-                "de": "Wie nutzt Ihre Einrichtung digitale Technologien, um zur ökologischen Nachhaltigkeit beizutragen? Bitte wählen Sie alle zutreffenden Optionen aus.",
+                "de": "Wie nutzt Ihre Organisation digitale Technologien, um zur ökologischen Nachhaltigkeit beizutragen? Bitte wählen Sie alle zutreffenden Optionen aus.",
                 "en": "How does your organisation make use of digital technologies to contribute to environmental sustainability? Please select all options that apply."
               },
               "defaultValue": [
@@ -1500,7 +1500,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 8",
                   "text": {
-                    "de": "Digitale Anwendungen zur Förderung eines verantwortungsvollen Verhaltens der Bürger*innen",
+                    "de": "Digitale Anwendungen zur Förderung eines verantwortungsvollen Verhaltens der Bürger:innen",
                     "en": "Digital applications to encourage responsible citizens behaviour"
                   }
                 },
@@ -1517,7 +1517,7 @@ export const EUDmaJSON = {
               "type": "matrix",
               "name": "EUPSOQuestion25",
               "title": {
-                "de": "Berücksichtigt Ihre Einrichtung bei ihren Digitalisierungsentscheidungen und digitalen Abläufen auch die Auswirkungen auf die Umwelt? Bitte bewerten Sie alle zutreffenden Optionen.",
+                "de": "Berücksichtigt Ihre Organisation bei ihren Digitalisierungsentscheidungen und digitalen Abläufen auch die Auswirkungen auf die Umwelt? Bitte bewerten Sie alle zutreffenden Optionen.",
                 "en": "Is your organisation taking into account environmental impacts in its digital choices and practices? Please grade all options that apply using this scale."
               },
               "defaultValue": {
@@ -1554,7 +1554,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 1",
                   "text": {
-                    "de": "Umweltbelange und standards sind in die Digitalstrategie der Einrichtung eingebettet",
+                    "de": "Umweltbelange und standards sind in die Digitalstrategie der Organisation eingebettet",
                     "en": "Environmental concerns and standards are embedded in the organisation's digital strategy"
                   }
                 },
@@ -1582,7 +1582,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 5",
                   "text": {
-                    "de": "Recycling / Wiederverwendung von alter technischer Ausrüstung wird von der Einrichtung aktiv betrieben",
+                    "de": "Recycling / Wiederverwendung von alter technischer Ausrüstung wird von der Organisation aktiv betrieben",
                     "en": "Recycling/re-use of old technological equipment is actively practised by the organisation"
                   }
                 }
@@ -1717,7 +1717,7 @@ export const EUDmaJSON = {
                   "name": "EUSMEQuestion10",
                   "isRequired": false,
                   "title": {
-                    "de": "Zahl der Beschäftigten der Einrichtung.",
+                    "de": "Zahl der Beschäftigten der Organisation.",
                     "en": "Organisation’s staff size."
                   },
                   "choices": [
@@ -2646,7 +2646,7 @@ export const EUDmaJSON = {
               "type": "matrixdropdown",
               "name": "EUSMEQuestion18",
               "title": {
-                "de": "Welche der folgenden fortgeschrittenen digitalen Technologien werden von Ihrer Einrichtung bereits eingesetzt? Bitte wählen Sie alle zutreffenden Optionen anhand der vorgegebenen Skala aus.",
+                "de": "Welche der folgenden fortgeschrittenen digitalen Technologien werden von Ihrer Organisation bereits eingesetzt? Bitte wählen Sie alle zutreffenden Optionen anhand der vorgegebenen Skala aus.",
                 "en": "Which of the following advanced digital technologies are already used by your organisation? Please choose all options that apply using the provided scale."
               },
               "defaultValue": {
@@ -2958,7 +2958,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Item 1",
                   "text": {
-                    "de": "Die Einrichtung verfügt über eine Datenverwaltungsstrategie/einen Datenverwaltungsplan/einen Maßnahmenkatalog",
+                    "de": "Die Organisation verfügt über eine Datenverwaltungsstrategie/einen Datenverwaltungsplan/einen Maßnahmenkatalog",
                     "en": "The organisation has in place a data management policy/plan/set of measures"
                   }
                 },
@@ -3340,7 +3340,7 @@ export const EUDmaJSON = {
                 {
                   "value": "Row 1",
                   "text": {
-                    "de": "Umweltbelange und -standards sind in die Digitalstrategie der Einrichtung eingebettet",
+                    "de": "Umweltbelange und -standards sind in die Digitalstrategie der Organisation eingebettet",
                     "en": "Environmental concerns and standards are embedded in the organisation's digital strategy"
                   }
                 },

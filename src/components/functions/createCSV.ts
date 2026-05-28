@@ -491,7 +491,7 @@ export function createCSV(Answers: Ref<any>, PlainData?: Ref<any>) {
 
     // send an automatic response to the customer
     let sendCustomerEmail = () => {
-        const costumer_type_label = prefix === "EUPSO" ? "Öffentliche Einrichtung oder Organisation" : "Kleines oder mittelständisches Unternehmen";
+        const costumer_type_label = prefix === "EUPSO" ? "Öffentliche Organisation" : "Kleines oder mittelständisches Unternehmen";
         const email_message = `Hallo ${header[`${prefix}Question4`]},
 
 Sie haben den Digitalcheck zur Ermittlung Ihres digitalen Reifegrades beim European Digital Innovation Hub (EDIH) Hamburg für Ihr/e ${costumer_type_label} ${header[`${prefix}Question2`]} durchgeführt.
