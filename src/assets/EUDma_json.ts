@@ -315,7 +315,7 @@ export const EUDmaJSON = {
                   "type": "dropdown",
                   "name": "EUPSOQuestion13",
                   "title": {
-                    "de": "Primär (eine Option obligatorisch).",
+                    "de": "Primär (eine Option obligatorisch)",
                     "en": "Primary (one mandatory)."
                   },
                   "defaultValue": " ",
@@ -398,7 +398,7 @@ export const EUDmaJSON = {
                   "type": "dropdown",
                   "name": "EUPSOQuestion14",
                   "title": {
-                    "de": "Sekundär (eine Option fakultativ).",
+                    "de": "Sekundär (eine Option fakultativ)",
                     "en": "Secondary (one optional)."
                   },
                   "defaultValue": " ",
@@ -1647,7 +1647,7 @@ export const EUDmaJSON = {
                       "type": "text",
                       "name": "EUSMEQuestion4",
                       "title": {
-                        "de": "Bitte geben Sie hier Ihren vollständigen Namen an.",
+                        "de": "Bitte geben Sie hier Ihren vollständigen Namen an",
                         "en": "Please enter your full name here."
                       },
                       "isRequired": false
@@ -1665,7 +1665,7 @@ export const EUDmaJSON = {
                       "type": "text",
                       "name": "EUSMEQuestion6",
                       "title": {
-                        "de": "Ihre E-Mail-Adresse.",
+                        "de": "Ihre E-Mail-Adresse",
                         "en": "Your email address."
                       },
                       "inputType": "email",
@@ -1675,8 +1675,8 @@ export const EUDmaJSON = {
                       "type": "text",
                       "name": "EUSMEQuestion7",
                       "title": {
-                        "de": "Ihre Telefonnummer.",
-                        "en": "Your Telephonenumber."
+                        "de": "Ihre Telefonnummer",
+                        "en": "Your Telephonenumber"
                       },
                       "inputType": "tel",
                       "isRequired": false
@@ -1688,8 +1688,8 @@ export const EUDmaJSON = {
                   "type": "text",
                   "name": "EUSMEQuestion8",
                   "title": {
-                    "de": "Link zur Unternehmenswebsite.",
-                    "en": "Link to your company website."
+                    "de": "Link zur Unternehmenswebsite",
+                    "en": "Link to your company website"
                   },
                   "inputType": "url"
                 },
@@ -1697,16 +1697,16 @@ export const EUDmaJSON = {
                   "type": "text",
                   "name": "EUSMEQuestion9",
                   "title": {
-                    "de": "Jahr der Unternehmensgründung (auch geschätzt).",
-                    "en": "Enterprise’s foundation year (also estimated)."
+                    "de": "Jahr der Unternehmensgründung (auch geschätzt)",
+                    "en": "Enterprise’s foundation year (also estimated)"
                   },
                   "isRequired": false,
                   "validators": [
                     {
                       "type": "regex",
                       "text": {
-                        "de": "Bitte geben Sie ein Jahr in vierstelliger Form ein.",
-                        "en": "Please enter a valid year with four digits."
+                        "de": "Bitte geben Sie ein Jahr in vierstelliger Form ein",
+                        "en": "Please enter a valid year with four digits"
                       },
                       "regex": "^(15[0-9]{2}|1[6-9][0-9]{2}|20[0-2][0-9]|2030)$"
                     }
@@ -1717,7 +1717,7 @@ export const EUDmaJSON = {
                   "name": "EUSMEQuestion10",
                   "isRequired": false,
                   "title": {
-                    "de": "Zahl der Beschäftigten der Organisation.",
+                    "de": "Anzahl der Beschäftigten",
                     "en": "Organisation’s staff size."
                   },
                   "choices": [
@@ -1804,8 +1804,8 @@ export const EUDmaJSON = {
                       "type": "dropdown",
                       "name": "EUSMEQuestion13",
                       "title": {
-                        "de": "Primär (eine Option obligatorisch).",
-                        "en": "Primary (one mandatory)."
+                        "de": "Primär (eine Option obligatorisch)",
+                        "en": "Primary (one mandatory)"
                       },
                       "choices": [
                         {
@@ -1984,8 +1984,8 @@ export const EUDmaJSON = {
                       "type": "dropdown",
                       "name": "EUSMEQuestion14",
                       "title": {
-                        "de": "Sekundär (eine Option fakultativ).",
-                        "en": "Secondary (one optional)."
+                        "de": "Sekundär (eine Option fakultativ)",
+                        "en": "Secondary (one optional)"
                       },
                       "choices": [
                         {
